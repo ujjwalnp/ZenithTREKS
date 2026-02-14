@@ -1,0 +1,4 @@
+ALTER TABLE trips
+  ADD COLUMN slug VARCHAR(255) UNIQUE AFTER title;
+
+
