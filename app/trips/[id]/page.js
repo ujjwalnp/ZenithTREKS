@@ -28,7 +28,7 @@ export default async function TripDetailsPage({ params }) {
           <img
             src={trip.thumbnail ? normalizeImageUrl(trip.thumbnail) : "/placeholder.svg?height=800&width=1200"}
             alt={trip.title}
-            className="w-full h-auto min-h-[400px] sm:min-h-[500px] object-cover object-center"
+            className="w-full h-[80vh] object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/40 to-transparent" />
         
