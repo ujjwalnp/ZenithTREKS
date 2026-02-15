@@ -5,6 +5,7 @@ import { normalizeImageUrl } from "@/lib/imageUtils"
 import { MapPin, Calendar, Users, ArrowRight, Mountain, Award, Shield, Heart, Star, Globe, Compass, TrendingUp } from "lucide-react"
 import Footer from "@/components/Footer"
 import ReviewsSection from "@/components/ReviewsSection"
+import HeroSearch from "@/components/HeroSearch"
 
 async function getFeaturedTrips() {
   return await query({
@@ -20,7 +21,7 @@ export default async function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2000&q=80"
@@ -30,7 +31,7 @@ export default async function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60" />
         </div>
 
-        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto animate-[fadeInUp_1s_ease-out]">
+        {/* <div className="relative z-10 text-center px-4 max-w-5xl mx-auto animate-[fadeInUp_1s_ease-out]">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
             Discover the Soul of <span className="text-emerald-400 animate-pulse">The Himalayas</span>
           </h1>
@@ -50,6 +51,12 @@ export default async function Home() {
             >
               Learn Our Story
             </Link>
+          </div>
+        </div> */}
+
+        <div className="relative z-10 flex flex-col items-center justify-center h-full">
+          <div className="mt-55 w-full px-4">
+            <HeroSearch />
           </div>
         </div>
 

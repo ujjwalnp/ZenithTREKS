@@ -4,15 +4,19 @@ import { useEffect, useMemo, useState } from "react"
 import Navbar from "@/components/navbar"
 import Link from "next/link"
 import { normalizeImageUrl } from "@/lib/imageUtils"
+import { useSearchParams } from "next/navigation"
 import { ArrowRight, MapPin, Search, SlidersHorizontal, Mountain, Calendar, Users } from "lucide-react"
 import Footer from "@/components/Footer"
 
 export default function TripsPage() {
+  const searchParams = useSearchParams()
+  
   const [trips, setTrips] = useState([])
   const [loading, setLoading] = useState(true)
-  const [search, setSearch] = useState("")
-  const [countryFilter, setCountryFilter] = useState("all")
-  const [priceRange, setPriceRange] = useState("all")
+  const [search, setSearch] = useState(searchParams.get("search") || "")
+  const [countryFilter, setCountryFilter] = useState(searchParams.get("country") || "all")
+  const [priceRange, setPriceRange] = useState(searchParams.get("price") || "all")
+
 
   useEffect(() => {
     const loadTrips = async () => {
@@ -38,7 +42,7 @@ export default function TripsPage() {
   const filteredTrips = useMemo(() => {
     const queryText = search.trim().toLowerCase()
 
-    return trips.filter((trip) => {
+    return trips.filter((trip) => { 
       const title = (trip.title || "").toLowerCase()
       const country = (trip.country || "").toLowerCase()
       const price = Number(trip.price) || 0
