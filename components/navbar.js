@@ -51,14 +51,14 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-2 sm:gap-3">
             <Image 
               src="/logo.png" 
-              alt="Ram Himalayan Travels" 
+              alt="Zenith TREKS & Expedition" 
               width={120} 
               height={40} 
               className="h-8 sm:h-10 md:h-12 w-auto"
               priority
             />
             <span className="text-xs sm:text-sm md:text-base font-bold text-stone-900 tracking-tight leading-tight hidden sm:block">
-              RAM HIMALAYAN <span className="text-emerald-700">TREK</span>
+              ZENITH TREKS & EXPEDITION
             </span>
           </Link>
 

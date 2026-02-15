@@ -5,7 +5,7 @@ import Link from "next/link"
 import Footer from "@/components/Footer"
 
 export const metadata = {
-  title: "About Us | Ram Himalayan Travels",
+  title: "About Us | Zenith Treks & Expedition",
   description: "Learn about our journey and commitment to providing the best trekking experiences in the Himalayas.",
 }
 
@@ -42,10 +42,10 @@ export default function AboutPage() {
         <section className="grid md:grid-cols-2 gap-16 items-center py-24">
           <div className="opacity-0 animate-[fadeInUp_0.6s_ease-out_0.6s_forwards]">
             <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">Our Story</h2>
-            <h3 className="text-4xl font-bold text-stone-900 mb-8">Who is Ram Himalayan Travels?</h3>
+            <h3 className="text-4xl font-bold text-stone-900 mb-8">Who is Zenith Treks & Expedition?</h3>
             <div className="space-y-6 text-stone-600 text-lg leading-relaxed">
               <p>
-                Founded by passionate trekkers and local guides, Ram Himalayan Travels was born out of a desire to share
+                Founded by passionate trekkers and local guides, Zenith Treks & Expedition was born out of a desire to share
                 the raw beauty and spiritual essence of the world's highest peaks with adventurers from around the
                 globe.
               </p>
@@ -113,7 +113,7 @@ export default function AboutPage() {
         <section className="py-24">
           <div className="text-center mb-16">
             <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">What Sets Us Apart</h2>
-            <h3 className="text-4xl font-bold text-stone-900 mb-4">Why Choose Ram Himalayan Travels?</h3>
+            <h3 className="text-4xl font-bold text-stone-900 mb-4">Why Choose Zenith Treks & Expedition?</h3>
             <p className="text-stone-600 text-lg max-w-2xl mx-auto">
               We combine local expertise with international standards to deliver unforgettable experiences
             </p>
@@ -216,7 +216,7 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto text-center">
             <Quote className="h-16 w-16 text-emerald-400 mx-auto mb-8 opacity-50" />
             <blockquote className="text-2xl md:text-3xl font-medium leading-relaxed mb-8">
-              "Ram Himalayan Travels didn't just take us to the mountains – they introduced us to a way of life. 
+              "Zenith Treks & Expedition didn't just take us to the mountains – they introduced us to a way of life. 
               The cultural experiences, the warmth of the local people, and the expertise of our guides made this 
               the most meaningful trip of our lives."
             </blockquote>

@@ -36,7 +36,7 @@ export default async function Home() {
             Discover the Soul of <span className="text-emerald-400 animate-pulse">The Himalayas</span>
           </h1>
           <p className="text-xl text-stone-200 mb-10 max-w-2xl mx-auto font-medium opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
-            Join Ram Himalayan Travels for extraordinary trekking adventures across Nepal, Bhutan, India, and Tibet.
+            Join Zenith Treks & Expedition for extraordinary trekking adventures across Nepal, Bhutan, India, and Tibet.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
             <Link
@@ -144,7 +144,7 @@ export default async function Home() {
       <section className="bg-stone-900 py-24 text-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-sm font-bold text-emerald-400 uppercase tracking-widest mb-3">Why Ram Himalayan Travels</h2>
+            <h2 className="text-sm font-bold text-emerald-400 uppercase tracking-widest mb-3">Why Zenith Treks & Expedition</h2>
             <h3 className="text-4xl font-bold mb-4">Your Trusted Mountain Partner</h3>
             <p className="text-stone-400 text-lg max-w-2xl mx-auto">Decades of experience in creating unforgettable Himalayan adventures</p>
           </div>
@@ -202,7 +202,7 @@ export default async function Home() {
               {
                 name: "Michael Chen",
                 country: "Singapore",
-                text: "Ram Himalayan Travels exceeded all expectations. The attention to detail, cultural insights, and professionalism were outstanding. Already planning my next trip!",
+                text: "Zenith Treks & Expedition exceeded all expectations. The attention to detail, cultural insights, and professionalism were outstanding. Already planning my next trip!",
                 rating: 5
               },
               {

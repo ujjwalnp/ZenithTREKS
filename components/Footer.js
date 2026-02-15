@@ -31,7 +31,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2 mb-4 sm:mb-6 group">
               <Image 
                 src="/logo.png" 
-                alt="Ram Himalayan Travels" 
+                alt="Zenith TREKS & Expedition" 
                 width={120} 
                 height={40} 
                 className="h-8 sm:h-10 md:h-12 w-auto"
@@ -117,14 +117,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-600 flex-shrink-0" />
-                <a href="tel:+9779867359775" className="text-stone-400 hover:text-emerald-500 transition-colors text-sm sm:text-base break-all">
-                  +977 9867359775
+                <a href="tel:+9779844159245" className="text-stone-400 hover:text-emerald-500 transition-colors text-sm sm:text-base break-all">
+                  +977 9844159245
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-600 flex-shrink-0" />
-                <a href="mailto:ramhimalayantrek@gmail.com" className="text-stone-400 hover:text-emerald-500 transition-colors text-sm sm:text-base break-all">
-                  ramhimalayantrek@gmail.com
+                <a href="mailto:trekszenith@gmail.com" className="text-stone-400 hover:text-emerald-500 transition-colors text-sm sm:text-base break-all">
+                  trekszenith@gmail.com
                 </a>
               </li>
             </ul>
@@ -134,7 +134,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-6 sm:pt-8 border-t border-stone-800 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
           <p className="text-stone-500 text-xs sm:text-sm text-center md:text-left">
-            © {currentYear} TrekNepal. All rights reserved.
+            © {currentYear} Zenith TREKS & Expedition. All rights reserved.
           </p>
           <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm">
