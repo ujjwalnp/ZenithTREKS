@@ -110,7 +110,7 @@ export default function ReviewsSection() {
             </h2>
             <h3 className="text-3xl font-bold text-stone-900 mb-6">Write a Review</h3>
             <p className="text-stone-600 mb-6 text-sm">
-              Tell future travelers about your journey with Zenith TREKS & Expedition.
+              Let other travelers know about your Himalayan adventure with Zenith Treks & Expedition.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-5">

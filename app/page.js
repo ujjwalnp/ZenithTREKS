@@ -137,8 +137,8 @@ export default async function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">Where We Go</h2>
-            <h3 className="text-4xl font-bold text-stone-900 mb-4">Explore the Himalayan Region</h3>
-            <p className="text-stone-600 text-lg max-w-2xl mx-auto">From the peaks of Nepal to the valleys of Bhutan, discover diverse landscapes and rich cultures</p>
+            <h3 className="text-4xl font-bold text-stone-900 mb-4">Venture Across the Himalayas</h3>
+            <p className="text-stone-600 text-lg max-w-2xl mx-auto">Traverse Nepal’s legendary mountains hidden valleys, discovering natural beauty and authentic local life along the way.</p>
           </div>
 
 
@@ -151,19 +151,19 @@ export default async function Home() {
           <div className="text-center mb-16">
             <h2 className="text-sm font-bold text-emerald-400 uppercase tracking-widest mb-3">Why Zenith Treks & Expedition</h2>
             <h3 className="text-4xl font-bold mb-4">Your Trusted Mountain Partner</h3>
-            <p className="text-stone-400 text-lg max-w-2xl mx-auto">Decades of experience in creating unforgettable Himalayan adventures</p>
+            <p className="text-stone-400 text-lg max-w-2xl mx-auto">Crafting Himalayan adventures with stunning landscapes and culture</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {[
-              { icon: MapPin, title: "Expert Guides", desc: "Certified local specialists with decades of experience." },
-              { icon: Calendar, title: "Flexible Dates", desc: "Customizable itineraries to suit your schedule." },
-              { icon: Users, title: "Small Groups", desc: "Intimate experiences with focus on safety and culture." },
-              { icon: Shield, title: "Safety First", desc: "Comprehensive insurance and emergency protocols." },
-              { icon: Award, title: "Proven Track Record", desc: "Over 10,000 successful expeditions completed." },
-              { icon: Heart, title: "Local Community", desc: "Supporting local economies and sustainable tourism." },
-              { icon: Globe, title: "International Service", desc: "Welcoming travelers from over 50 countries." },
-              { icon: TrendingUp, title: "Fair Pricing", desc: "Competitive rates in local currency with no hidden fees." }
+              { icon: Users, title: "Small Groups", desc: "Intimate trekking experiences focused on safety and personal attention." },
+              { icon: MapPin, title: "Skilled Guides", desc: "Certified local experts with years of Himalayan experience." },
+              { icon: Calendar, title: "Flexible Itineraries", desc: "Custom schedules designed to fit your travel plans." },
+              { icon: Shield, title: "Safety & Support", desc: "Full insurance coverage and emergency protocols on every trek." },
+              { icon: Heart, title: "Community Support", desc: "Promoting sustainable tourism and supporting local mountain communities." },
+              { icon: Award, title: "Trusted Experience", desc: "Thousands of successful treks and peak expeditions completed." },
+              { icon: Globe, title: "Global Travelers", desc: "Welcoming adventurers from around the world." },
+              { icon: TrendingUp, title: "Transparent Pricing", desc: "Fair rates with no hidden charges, all in local currency." }
             ].map((item, index) => {
               const Icon = item.icon
               return (
@@ -193,27 +193,27 @@ export default async function Home() {
           <div className="text-center mb-16">
             <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">Testimonials</h2>
             <h3 className="text-4xl font-bold text-stone-900 mb-4">What Our Travelers Say</h3>
-            <p className="text-stone-600 text-lg max-w-2xl mx-auto">Real experiences from real adventurers</p>
+            <p className="text-stone-600 text-lg max-w-2xl mx-auto">Real journeys. Real travelers. Real experiences.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "Sarah Johnson",
-                country: "USA",
-                text: "The Everest Base Camp trek was a life-changing experience. Our guide was knowledgeable, patient, and made sure everyone was safe and comfortable. Highly recommend!",
+                name: "Sofia Martinez",
+                country: "Spain",
+                text: "Zenith Treks & Expedition made every moment memorable. The organization, support, and Himalayan expertise were top-notch. Can’t wait for my next adventure with them!",
                 rating: 5
               },
               {
-                name: "Michael Chen",
-                country: "Singapore",
-                text: "Zenith Treks & Expedition exceeded all expectations. The attention to detail, cultural insights, and professionalism were outstanding. Already planning my next trip!",
+                name: "Oliver Kim",
+                country: "South Korea",
+                text: "From start to finish, everything was smooth and well-planned. The group was small, the scenery stunning, and the guides made the trek safe and enjoyable. Highly recommended!",
                 rating: 5
-              },
+              }, 
               {
-                name: "Emma Williams",
-                country: "UK",
-                text: "From booking to completion, everything was seamless. The small group size made it feel personal, and the scenery was absolutely breathtaking. Thank you for an amazing adventure!",
+                name: "Liam Patel",
+                country: "India",
+                text: "The Annapurna Circuit trek was unforgettable. Our guides were experienced and attentive, ensuring we felt safe and immersed in local culture. Truly an amazing journey!",
                 rating: 5
               }
             ].map((testimonial, index) => (
@@ -272,7 +272,7 @@ export default async function Home() {
           <Compass className="h-16 w-16 text-emerald-700 mx-auto mb-6 animate-[spin_20s_linear_infinite]" />
           <h2 className="text-4xl font-bold text-stone-900 mb-6">Ready to Start Your Adventure?</h2>
           <p className="text-xl text-stone-600 mb-10 max-w-2xl mx-auto">
-            Let us help you plan the perfect Himalayan expedition. Our team is ready to answer your questions and customize your journey.
+            Step into the Himalayas with confidence. Our expert team ensures every trek is safe, immersive, and unforgettable.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
