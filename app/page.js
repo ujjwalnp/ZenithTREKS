@@ -72,6 +72,19 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* Destinations Section */}
+      <section className="py-24 px-4 bg-gradient-to-b from-stone-50 to-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-sm font-bold text-amber-700 uppercase tracking-widest mb-3">Where We Go</h2>
+            <h3 className="text-4xl font-bold text-stone-900 mb-4">Venture Across the Himalayas</h3>
+            <p className="text-stone-600 text-lg max-w-2xl mx-auto">Traverse Nepal’s legendary mountains hidden valleys, discovering natural beauty and authentic local life along the way.</p>
+          </div>
+
+
+        </div>
+      </section>
+
       {/* Featured Trips */}
       <section className="py-24 px-4 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
@@ -98,18 +111,38 @@ export default async function Home() {
               >
                 <div className="relative h-72 overflow-hidden">
                   <img
-                    src={trip.thumbnail ? normalizeImageUrl(trip.thumbnail) : "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"}
+                    src={
+                      trip.thumbnail
+                        ? normalizeImageUrl(trip.thumbnail)
+                        : "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+                    }
                     alt={trip.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
+
+                  {/* Duration - LEFT */}
                   <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-bold text-stone-900 uppercase tracking-wider">
+                    {trip.duration || "12 Days"}
+                  </div>
+
+                  {/* Country - RIGHT */}
+                  <div className="absolute top-4 right-4 bg-amber-600 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
                     {trip.country}
                   </div>
                 </div>
+
                 <div className="p-8">
-                  <h4 className="text-2xl font-bold text-stone-900 mb-4 group-hover:text-amber-700 transition-colors">
+                  <h4 className="text-2xl font-bold text-stone-900 mb-3 group-hover:text-amber-700 transition-colors">
                     {trip.title}
                   </h4>
+
+                  {/* Short Description */}
+                  <p className="text-stone-500 text-sm mb-6 line-clamp-2">
+                    {trip.description
+                      ? trip.description
+                      : "A breathtaking Himalayan adventure through scenic landscapes and rich culture..."}
+                  </p>
+
                   <div className="flex items-center justify-between pt-6 border-t border-stone-100">
                     <div>
                       <span className="text-stone-400 text-sm block mb-1">Starting from</span>
@@ -117,6 +150,7 @@ export default async function Home() {
                         ${Number(trip.price).toLocaleString()}
                       </span>
                     </div>
+
                     <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center group-hover:bg-amber-700 group-hover:text-white transition-all">
                       <ArrowRight className="h-6 w-6" />
                     </div>
@@ -129,19 +163,6 @@ export default async function Home() {
               Our new expeditions are being prepared. Stay tuned!
             </div>
           )}
-        </div>
-      </section>
-
-      {/* Destinations Section */}
-      <section className="py-24 px-4 bg-gradient-to-b from-stone-50 to-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-sm font-bold text-amber-700 uppercase tracking-widest mb-3">Where We Go</h2>
-            <h3 className="text-4xl font-bold text-stone-900 mb-4">Venture Across the Himalayas</h3>
-            <p className="text-stone-600 text-lg max-w-2xl mx-auto">Traverse Nepal’s legendary mountains hidden valleys, discovering natural beauty and authentic local life along the way.</p>
-          </div>
-
-
         </div>
       </section>
 

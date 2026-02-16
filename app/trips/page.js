@@ -152,47 +152,53 @@ export default function TripsPage() {
             <Link
               key={trip.id}
               href={`/trips/${trip.slug || trip.id}`}
-              className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-stone-100 flex flex-col opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]"
-              style={{ animationDelay: `${1 + (index * 0.1)}s` }}
+              className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-stone-100 opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]"
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-72 overflow-hidden">
                 <img
-                  src={trip.thumbnail ? normalizeImageUrl(trip.thumbnail) : "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"}
+                  src={
+                    trip.thumbnail
+                      ? normalizeImageUrl(trip.thumbnail)
+                      : "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+                  }
                   alt={trip.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm text-stone-900 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-lg">
+
+                {/* Duration - LEFT */}
+                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-bold text-stone-900 uppercase tracking-wider">
+                  {trip.duration || "12 Days"}
+                </div>
+
+                {/* Country - RIGHT */}
+                <div className="absolute top-4 right-4 bg-amber-600 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
                   {trip.country}
                 </div>
-                <div className="absolute bottom-4 left-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                  <div className="flex items-center gap-1 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-semibold text-stone-700">
-                    <Calendar className="h-3 w-3" />
-                    <span>Flexible</span>
-                  </div>
-                  <div className="flex items-center gap-1 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-semibold text-stone-700">
-                    <Users className="h-3 w-3" />
-                    <span>Small Group</span>
-                  </div>
-                </div>
               </div>
-              <div className="p-8 flex-grow flex flex-col">
-                <h3 className="text-2xl font-bold text-stone-900 mb-3 group-hover:text-amber-700 transition-colors leading-tight">
+
+              <div className="p-8">
+                <h4 className="text-2xl font-bold text-stone-900 mb-3 group-hover:text-amber-700 transition-colors">
                   {trip.title}
-                </h3>
-                <div className="flex items-center text-stone-500 text-sm mb-auto">
-                  <MapPin className="h-4 w-4 mr-2 text-amber-600 flex-shrink-0" />
-                  <span>{trip.country} Expedition</span>
-                </div>
-                <div className="pt-6 mt-6 border-t border-stone-100 flex items-center justify-between">
+                </h4>
+
+                {/* Short Description */}
+                <p className="text-stone-500 text-sm mb-6 line-clamp-2">
+                  {trip.description
+                    ? trip.description
+                    : "A breathtaking Himalayan adventure through scenic landscapes and rich culture..."}
+                </p>
+
+                <div className="flex items-center justify-between pt-6 border-t border-stone-100">
                   <div>
-                    <span className="text-stone-400 text-xs block uppercase tracking-wider mb-1 font-semibold">Starting from</span>
+                    <span className="text-stone-400 text-sm block mb-1">Starting from</span>
                     <span className="text-2xl font-black text-amber-700">
-                      $ {Number(trip.price).toLocaleString()}
+                      ${Number(trip.price).toLocaleString()}
                     </span>
                   </div>
-                  <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center group-hover:bg-amber-700 group-hover:text-white group-hover:scale-110 transition-all duration-300">
-                    <ArrowRight className="h-5 w-5" />
+
+                  <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center group-hover:bg-amber-700 group-hover:text-white transition-all">
+                    <ArrowRight className="h-6 w-6" />
                   </div>
                 </div>
               </div>
