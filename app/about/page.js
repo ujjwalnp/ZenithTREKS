@@ -32,7 +32,7 @@ export default function AboutPage() {
             Our Journey
           </h1>
           <p className="text-xl md:text-2xl text-stone-200 max-w-3xl mx-auto font-medium opacity-0 animate-[fadeInUp_0.6s_ease-out_0.4s_forwards]">
-            Bringing the magic of the Himalayas closer to you since 2010.
+            Connecting people to the magic of Nepal’s mountains since 2010.
           </p>
         </div>
       </section>
@@ -42,23 +42,19 @@ export default function AboutPage() {
         <section className="grid md:grid-cols-2 gap-16 items-center py-24">
           <div className="opacity-0 animate-[fadeInUp_0.6s_ease-out_0.6s_forwards]">
             <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">Our Story</h2>
-            <h3 className="text-4xl font-bold text-stone-900 mb-8">Who is Zenith Treks & Expedition?</h3>
+            <h3 className="text-4xl font-bold text-stone-900 mb-8">Who are we?</h3>
             <div className="space-y-6 text-stone-600 text-lg leading-relaxed">
               <p>
-                Founded by passionate trekkers and local guides, Zenith Treks & Expedition was born out of a desire to share
-                the raw beauty and spiritual essence of the world's highest peaks with adventurers from around the
-                globe.
+                Zenith Treks & Expedition was created by passionate trekkers and local guides who wanted to share the raw beauty and spirit of Nepal’s Himalayas with travelers worldwide.
               </p>
               <p>
-                Based in the heart of Nepal, we specialize in curated trekking experiences that go beyond the standard
-                trails. Our team consists of local experts who have spent their lives navigating these mountains,
-                ensuring that every trip is not just a hike, but a deep dive into the local culture, tradition, and
-                geography.
+                From Everest Base Camp to the Annapurna Circuit, we craft treks that go beyond ordinary trails. Our local experts ensure each journey immerses you in Nepal’s culture, traditions, and breathtaking landscapes, making every trip a life-changing adventure.
               </p>
               <p>
-                Whether you are looking for the challenge of Everest Base Camp or the serene trails of the Annapurna
-                circuit, we provide the safety, expertise, and personalized touch that turns a vacation into a
-                life-changing journey.
+                Whether you’re seeking the thrill of peak climbing, the challenge of multi-day treks, or peaceful hikes through hidden valleys, we provide the guidance, safety, and personal attention to make every journey unforgettable.
+              </p>
+              <p>
+                We are committed to sustainable and responsible tourism, respecting the environment and local communities along every trail. With thoughtfully designed itineraries, expert guidance, and authentic cultural experiences, we help you explore Nepal in a way that’s exciting, meaningful, and truly unforgettable.
               </p>
             </div>
             <div className="flex items-center gap-4 mt-8 pt-8 border-t border-stone-200">
@@ -79,8 +75,8 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl group opacity-0 animate-[fadeInUp_0.6s_ease-out_0.8s_forwards] bg-black flex items-center justify-end md:justify-end max-w-xs md:max-w-sm ml-auto">
-  <video className="h-full w-auto object-contain" src="/vid.mp4" autoPlay loop muted controls poster="/logo.png" />
-</div>
+            <video className="h-full w-auto object-contain" src="/vid.mp4" autoPlay loop muted controls poster="/logo.png" />
+          </div>
         </section>
 
         {/* Mission & Vision */}
@@ -92,8 +88,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-3xl font-bold mb-4">Our Mission</h3>
               <p className="text-emerald-100 text-lg leading-relaxed">
-                To create transformative mountain experiences that connect people with nature, local cultures, and themselves. 
-                We believe every journey should leave a lasting positive impact on both the traveler and the communities we visit.
+                To craft unforgettable Himalayan adventures that immerse travelers in nature, local traditions, and self-discovery. Every journey is designed to leave a meaningful impact on both you and the communities you visit.
               </p>
             </div>
             <div className="opacity-0 animate-[fadeInUp_0.6s_ease-out_1.2s_forwards]">
@@ -102,8 +97,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-3xl font-bold mb-4">Our Vision</h3>
               <p className="text-emerald-100 text-lg leading-relaxed">
-                To be the most trusted and sustainable adventure travel company in the Himalayas, setting the standard 
-                for responsible tourism while preserving the pristine beauty and cultural heritage of the mountains for future generations.
+                To set the standard for sustainable Himalayan adventures, inspiring travelers to explore with respect and curiosity, while preserving the mountains’ pristine beauty, fragile ecosystems, and unique cultural legacy for generations to come.
               </p>
             </div>
           </div>
@@ -115,50 +109,50 @@ export default function AboutPage() {
             <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">What Sets Us Apart</h2>
             <h3 className="text-4xl font-bold text-stone-900 mb-4">Why Choose Zenith Treks & Expedition?</h3>
             <p className="text-stone-600 text-lg max-w-2xl mx-auto">
-              We combine local expertise with international standards to deliver unforgettable experiences
+              By combining the expertise of seasoned Himalayan guides with international best practices, we deliver journeys that leave lasting memories.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
                 icon: <Users className="w-8 h-8" />,
-                title: "Local Experts",
-                desc: "Our guides are born and raised in the mountain regions, offering unmatched local knowledge and authentic connections.",
+                title: "Himalayan Guides",
+                desc: "Our guides grew up in the mountains, bringing deep local insight and authentic connections to every trek.",
               },
               {
                 icon: <ShieldCheck className="w-8 h-8" />,
-                title: "Safety First",
-                desc: "We maintain rigorous safety standards and carry high-altitude medical equipment on every trek.",
+                title: "Prioritizing Safety",
+                desc: "We uphold strict safety protocols and carry essential high-altitude medical gear on all expeditions.",
               },
               {
                 icon: <Map className="w-8 h-8" />,
-                title: "Unique Routes",
-                desc: "Beyond the mainstream paths, we take you to hidden gems known only to the locals.",
+                title: "Offbeat Trails",
+                desc: "Explore hidden routes and secret mountain spots that only locals know, beyond typical trekking paths.",
               },
               {
                 icon: <Compass className="w-8 h-8" />,
-                title: "Eco-Conscious",
-                desc: "We practice sustainable tourism to ensure the Himalayas remain pristine for generations.",
+                title: "Sustainable Travel",
+                desc: "Our eco-conscious practices help protect Nepal’s landscapes and wildlife for future generations.",
               },
               {
                 icon: <Award className="w-8 h-8" />,
-                title: "Award Winning",
-                desc: "Recognized for excellence in sustainable tourism and customer satisfaction.",
+                title: "Recognized Excellence",
+                desc: "Celebrated for delivering outstanding trekking experiences and sustainable adventure tourism.",
               },
               {
                 icon: <Heart className="w-8 h-8" />,
-                title: "Cultural Immersion",
-                desc: "Experience authentic local culture, cuisine, and hospitality throughout your journey.",
+                title: "Authentic Culture",
+                desc: "Immerse yourself in local traditions, cuisine, and the genuine hospitality of Himalayan communities.",
               },
               {
                 icon: <TrendingUp className="w-8 h-8" />,
-                title: "Small Groups",
-                desc: "Intimate group sizes ensure personalized attention and deeper connections.",
+                title: "Personalized Groups",
+                desc: "Smaller group sizes allow for more attention, flexibility, and meaningful connections during your trek.",
               },
               {
                 icon: <Leaf className="w-8 h-8" />,
-                title: "Leave No Trace",
-                desc: "We're committed to zero-waste expeditions and supporting local conservation efforts.",
+                title: "Eco-Friendly Practices",
+                desc: "Committed to low-impact trekking and supporting local conservation to keep the mountains pristine.",
               },
             ].map((item, i) => (
               <div 
@@ -182,14 +176,14 @@ export default function AboutPage() {
               <h3 className="text-4xl font-bold text-stone-900 mb-8">What We Stand For</h3>
               <div className="space-y-6">
                 {[
-                  "Fair wages and good working conditions for all local staff",
-                  "Supporting local businesses and communities in mountain regions",
-                  "Environmental conservation and sustainable trekking practices",
+                  "Fair wages and safe working conditions for all our local guides and staff",
+                  "Supporting local communities, artisans, and mountain businesses",
+                  "Eco-friendly trekking and sustainable travel practices",
                   "Transparent pricing with no hidden costs",
-                  "Comprehensive travel insurance and safety protocols",
-                  "Cultural sensitivity and respect for local traditions",
-                  "Carbon offset programs for all our expeditions",
-                  "Emergency evacuation and medical support on all treks"
+                  "Travel insurance and strict safety standards for all trips",
+                  "Respect for local traditions and cultural heritage",
+                  "Carbon offset programs for all journeys",
+                  "Emergency support and medical care included on every trek"
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-4 group">
                     <div className="flex-shrink-0 w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center group-hover:bg-emerald-700 transition-colors">
@@ -216,17 +210,15 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto text-center">
             <Quote className="h-16 w-16 text-emerald-400 mx-auto mb-8 opacity-50" />
             <blockquote className="text-2xl md:text-3xl font-medium leading-relaxed mb-8">
-              "Zenith Treks & Expedition didn't just take us to the mountains – they introduced us to a way of life. 
-              The cultural experiences, the warmth of the local people, and the expertise of our guides made this 
-              the most meaningful trip of our lives."
+              "Our trek with Zenith Treks & Expedition was unforgettable. The guides’ expertise, stunning Himalayan landscapes, and authentic cultural encounters made every day special. We weren’t just walking trails; we were connecting with a way of life and discovering the true spirit of Nepal"
             </blockquote>
             <div className="flex items-center justify-center gap-4">
               <div className="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-xl">
                 M
               </div>
               <div className="text-left">
-                <div className="font-bold text-lg">Michael Chen</div>
-                <div className="text-emerald-300">Singapore • Everest Base Camp Trek 2024</div>
+                <div className="font-bold text-lg">Liam Johnson</div>
+                <div className="text-emerald-300">USA • Manaslu Circuit Trek 2025</div>
               </div>
             </div>
             <div className="flex justify-center gap-1 mt-6">
@@ -243,15 +235,15 @@ export default function AboutPage() {
             <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">Meet The Team</h2>
             <h3 className="text-4xl font-bold text-stone-900 mb-4">Expert Guides & Support Staff</h3>
             <p className="text-stone-600 text-lg max-w-2xl mx-auto">
-              Our team of certified mountain guides and support staff are passionate about sharing their knowledge
+              From trekking experts to local support staff, our team is committed to guiding you safely and immersing you in Nepal’s mountains and culture.
             </p>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { name: "Ramesh Sherpa", role: "Lead Guide & Founder", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" },
-              { name: "Pemba Dorje", role: "Senior Trek Guide", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80" },
-              { name: "Ang Tsering", role: "Safety Coordinator", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" },
-              { name: "Lakpa Sherpa", role: "Cultural Liaison", image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=400&q=80" }
+              { name: "Bikash Rai", role: "Founder & Lead Guide", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" },
+              { name: "Nima Sherpa", role: "Senior Trekking Guide", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80" },
+              { name: "Tashi Lama", role: "Safety & Logistics Lead", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" },
+              { name: "Bikram Gurung", role: "Culture & Community Lead", image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=400&q=80" }
             ].map((member, i) => (
               <div 
                 key={i} 
@@ -281,7 +273,7 @@ export default function AboutPage() {
           <Compass className="h-16 w-16 text-emerald-700 mx-auto mb-6 animate-[spin_20s_linear_infinite]" />
           <h2 className="text-4xl font-bold text-stone-900 mb-6">Ready for Your Next Adventure?</h2>
           <p className="text-stone-600 text-lg mb-10 max-w-2xl mx-auto">
-            The mountains are calling. Let us help you plan the trekking experience of a lifetime with our expert team and personalized service.
+            Step into the Himalayas with confidence. Our expert team ensures every trek is safe, immersive, and unforgettable.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
