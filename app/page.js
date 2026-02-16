@@ -23,11 +23,16 @@ export default async function Home() {
       {/* Hero Section */}
       <section className="relative h-screen overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2000&q=80"
-            alt="Himalayan Mountains"
-            className="w-full h-full object-cover animate-[zoom_20s_ease-in-out_infinite_alternate]"
-          />
+          <video
+            className="w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src="/video.mp4" type="video/mp4" />
+          </video>
+
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60" />
         </div>
 
