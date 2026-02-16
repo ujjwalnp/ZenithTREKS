@@ -38,7 +38,7 @@ export default async function Home() {
 
         {/* <div className="relative z-10 text-center px-4 max-w-5xl mx-auto animate-[fadeInUp_1s_ease-out]">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
-            Discover the Soul of <span className="text-emerald-400 animate-pulse">The Himalayas</span>
+            Discover the Soul of <span className="text-amber-400 animate-pulse">The Himalayas</span>
           </h1>
           <p className="text-xl text-stone-200 mb-10 max-w-2xl mx-auto font-medium opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
             Join Zenith Treks & Expedition for extraordinary trekking adventures across Nepal, Bhutan, India, and Tibet.
@@ -46,7 +46,7 @@ export default async function Home() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
             <Link
               href="/trips"
-              className="px-8 py-4 bg-emerald-700 text-white rounded-full font-bold text-lg hover:bg-emerald-800 hover:scale-105 transition-all shadow-xl hover:shadow-emerald-900/20"
+              className="px-8 py-4 bg-amber-700 text-white rounded-full font-bold text-lg hover:bg-amber-800 hover:scale-105 transition-all shadow-xl hover:shadow-amber-900/20"
             >
               Explore All Trips
             </Link>
@@ -76,12 +76,12 @@ export default async function Home() {
       <section className="py-24 px-4 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div>
-            <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">Handpicked Adventures</h2>
+            <h2 className="text-sm font-bold text-amber-700 uppercase tracking-widest mb-3">Handpicked Adventures</h2>
             <h3 className="text-4xl font-bold text-stone-900">Featured Expeditions</h3>
           </div>
           <Link
             href="/trips"
-            className="flex items-center text-stone-600 font-bold hover:text-emerald-700 transition-colors group"
+            className="flex items-center text-stone-600 font-bold hover:text-amber-700 transition-colors group"
           >
             View all trips <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Link>
@@ -107,17 +107,17 @@ export default async function Home() {
                   </div>
                 </div>
                 <div className="p-8">
-                  <h4 className="text-2xl font-bold text-stone-900 mb-4 group-hover:text-emerald-700 transition-colors">
+                  <h4 className="text-2xl font-bold text-stone-900 mb-4 group-hover:text-amber-700 transition-colors">
                     {trip.title}
                   </h4>
                   <div className="flex items-center justify-between pt-6 border-t border-stone-100">
                     <div>
                       <span className="text-stone-400 text-sm block mb-1">Starting from</span>
-                      <span className="text-2xl font-black text-emerald-700">
+                      <span className="text-2xl font-black text-amber-700">
                         ${Number(trip.price).toLocaleString()}
                       </span>
                     </div>
-                    <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center group-hover:bg-emerald-700 group-hover:text-white transition-all">
+                    <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center group-hover:bg-amber-700 group-hover:text-white transition-all">
                       <ArrowRight className="h-6 w-6" />
                     </div>
                   </div>
@@ -136,7 +136,7 @@ export default async function Home() {
       <section className="py-24 px-4 bg-gradient-to-b from-stone-50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">Where We Go</h2>
+            <h2 className="text-sm font-bold text-amber-700 uppercase tracking-widest mb-3">Where We Go</h2>
             <h3 className="text-4xl font-bold text-stone-900 mb-4">Venture Across the Himalayas</h3>
             <p className="text-stone-600 text-lg max-w-2xl mx-auto">Traverse Nepal’s legendary mountains hidden valleys, discovering natural beauty and authentic local life along the way.</p>
           </div>
@@ -149,7 +149,7 @@ export default async function Home() {
       <section className="bg-stone-900 py-24 text-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-sm font-bold text-emerald-400 uppercase tracking-widest mb-3">Why Zenith Treks & Expedition</h2>
+            <h2 className="text-sm font-bold text-amber-400 uppercase tracking-widest mb-3">Why Zenith Treks & Expedition</h2>
             <h3 className="text-4xl font-bold mb-4">Your Trusted Mountain Partner</h3>
             <p className="text-stone-400 text-lg max-w-2xl mx-auto">Crafting Himalayan adventures with stunning landscapes and culture</p>
           </div>
@@ -172,7 +172,7 @@ export default async function Home() {
                   className="text-center group opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="w-16 h-16 bg-emerald-700/20 text-emerald-400 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                  <div className="w-16 h-16 bg-amber-700/20 text-amber-400 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                     <Icon className="h-8 w-8" />
                   </div>
                   <h5 className="text-xl font-bold mb-3">{item.title}</h5>
@@ -191,7 +191,7 @@ export default async function Home() {
       <section className="py-24 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">Testimonials</h2>
+            <h2 className="text-sm font-bold text-amber-700 uppercase tracking-widest mb-3">Testimonials</h2>
             <h3 className="text-4xl font-bold text-stone-900 mb-4">What Our Travelers Say</h3>
             <p className="text-stone-600 text-lg max-w-2xl mx-auto">Real journeys. Real travelers. Real experiences.</p>
           </div>
@@ -229,7 +229,7 @@ export default async function Home() {
                 </div>
                 <p className="text-stone-700 mb-6 leading-relaxed italic">"{testimonial.text}"</p>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                  <div className="w-12 h-12 bg-amber-700 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
                     {testimonial.name.charAt(0)}
                   </div>
                   <div>
@@ -244,7 +244,7 @@ export default async function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-24 px-4 bg-gradient-to-br from-emerald-700 to-emerald-900 text-white">
+      <section className="py-24 px-4 bg-gradient-to-br from-amber-700 to-amber-900 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
             {[
@@ -258,8 +258,8 @@ export default async function Home() {
                 className="text-center opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <h4 className="text-5xl font-black mb-3 text-emerald-200">{stat.value}</h4>
-                <p className="text-emerald-100 font-medium">{stat.label}</p>
+                <h4 className="text-5xl font-black mb-3 text-amber-200">{stat.value}</h4>
+                <p className="text-amber-100 font-medium">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -269,7 +269,7 @@ export default async function Home() {
       {/* CTA Section */}
       <section className="py-24 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <Compass className="h-16 w-16 text-emerald-700 mx-auto mb-6 animate-[spin_20s_linear_infinite]" />
+          <Compass className="h-16 w-16 text-amber-700 mx-auto mb-6 animate-[spin_20s_linear_infinite]" />
           <h2 className="text-4xl font-bold text-stone-900 mb-6">Ready to Start Your Adventure?</h2>
           <p className="text-xl text-stone-600 mb-10 max-w-2xl mx-auto">
             Step into the Himalayas with confidence. Our expert team ensures every trek is safe, immersive, and unforgettable.
@@ -277,7 +277,7 @@ export default async function Home() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/trips"
-              className="px-8 py-4 bg-emerald-700 text-white rounded-full font-bold text-lg hover:bg-emerald-800 hover:scale-105 transition-all shadow-xl"
+              className="px-8 py-4 bg-amber-700 text-white rounded-full font-bold text-lg hover:bg-amber-800 hover:scale-105 transition-all shadow-xl"
             >
               Browse All Trips
             </Link>

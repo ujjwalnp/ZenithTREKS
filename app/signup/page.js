@@ -71,7 +71,7 @@ export default function SignupPage() {
               <input
                 type="text"
                 required
-                className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-emerald-500 transition-all outline-none"
+                className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-amber-500 transition-all outline-none"
                 placeholder="John Doe"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -82,7 +82,7 @@ export default function SignupPage() {
               <input
                 type="email"
                 required
-                className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-emerald-500 transition-all outline-none"
+                className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-amber-500 transition-all outline-none"
                 placeholder="you@example.com"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -93,7 +93,7 @@ export default function SignupPage() {
               <input
                 type="password"
                 required
-                className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-emerald-500 transition-all outline-none"
+                className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-amber-500 transition-all outline-none"
                 placeholder="••••••••"
                 value={formData.password}
                 onChange={(e) => setFormData({ ...formData, password: e.target.value })}
@@ -104,7 +104,7 @@ export default function SignupPage() {
               <input
                 type="password"
                 required
-                className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-emerald-500 transition-all outline-none"
+                className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-amber-500 transition-all outline-none"
                 placeholder="••••••••"
                 value={formData.confirmPassword}
                 onChange={(e) => setFormData({ ...formData, confirmPassword: e.target.value })}
@@ -113,7 +113,7 @@ export default function SignupPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-emerald-700 text-white py-3.5 rounded-xl font-bold text-lg hover:bg-emerald-800 transition-all shadow-md active:scale-[0.98] disabled:opacity-50"
+              className="w-full bg-amber-700 text-white py-3.5 rounded-xl font-bold text-lg hover:bg-amber-800 transition-all shadow-md active:scale-[0.98] disabled:opacity-50"
             >
               {loading ? "Creating account..." : "Create Account"}
             </button>
@@ -121,7 +121,7 @@ export default function SignupPage() {
 
           <div className="mt-8 text-center text-stone-600">
             Already have an account?{" "}
-            <Link href="/login" className="text-emerald-700 font-bold hover:underline">
+            <Link href="/login" className="text-amber-700 font-bold hover:underline">
               Sign In
             </Link>
           </div>

@@ -120,7 +120,7 @@ export default function RichTextEditor({ value, onChange, placeholder = "Enter d
       onClick={onClick}
       title={title}
       className={`p-2 rounded-lg transition-colors ${
-        active ? "bg-emerald-100 text-emerald-700" : "hover:bg-stone-100 text-stone-600"
+        active ? "bg-amber-100 text-amber-700" : "hover:bg-stone-100 text-stone-600"
       }`}
     >
       <Icon className="h-4 w-4" />
@@ -261,7 +261,7 @@ export default function RichTextEditor({ value, onChange, placeholder = "Enter d
           setShowBgColor(false)
           setShowFontSize(false)
         }}
-        className="rich-text-content min-h-[300px] max-h-[500px] overflow-y-auto p-4 outline-none focus:ring-2 focus:ring-emerald-500"
+        className="rich-text-content min-h-[300px] max-h-[500px] overflow-y-auto p-4 outline-none focus:ring-2 focus:ring-amber-500"
         data-placeholder={placeholder}
         suppressContentEditableWarning
       />

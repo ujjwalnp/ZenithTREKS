@@ -27,7 +27,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
         </div>
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <Mountain className="h-16 w-16 text-emerald-400 mx-auto mb-6 opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]" />
+          <Mountain className="h-16 w-16 text-amber-400 mx-auto mb-6 opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]" />
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg opacity-0 animate-[fadeInUp_0.6s_ease-out_0.2s_forwards]">
             Our Journey
           </h1>
@@ -41,7 +41,7 @@ export default function AboutPage() {
         {/* Company Story */}
         <section className="grid md:grid-cols-2 gap-16 items-center py-24">
           <div className="opacity-0 animate-[fadeInUp_0.6s_ease-out_0.6s_forwards]">
-            <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">Our Story</h2>
+            <h2 className="text-sm font-bold text-amber-700 uppercase tracking-widest mb-3">Our Story</h2>
             <h3 className="text-4xl font-bold text-stone-900 mb-8">Who are we?</h3>
             <div className="space-y-6 text-stone-600 text-lg leading-relaxed">
               <p>
@@ -59,17 +59,17 @@ export default function AboutPage() {
             </div>
             <div className="flex items-center gap-4 mt-8 pt-8 border-t border-stone-200">
               <div className="text-center">
-                <div className="text-3xl font-black text-emerald-700 mb-1">15+</div>
+                <div className="text-3xl font-black text-amber-700 mb-1">15+</div>
                 <div className="text-sm text-stone-500 font-medium">Years</div>
               </div>
               <div className="w-px h-12 bg-stone-200"></div>
               <div className="text-center">
-                <div className="text-3xl font-black text-emerald-700 mb-1">10k+</div>
+                <div className="text-3xl font-black text-amber-700 mb-1">10k+</div>
                 <div className="text-sm text-stone-500 font-medium">Travelers</div>
               </div>
               <div className="w-px h-12 bg-stone-200"></div>
               <div className="text-center">
-                <div className="text-3xl font-black text-emerald-700 mb-1">77+</div>
+                <div className="text-3xl font-black text-amber-700 mb-1">77+</div>
                 <div className="text-sm text-stone-500 font-medium">Destinations</div>
               </div>
             </div>
@@ -80,23 +80,23 @@ export default function AboutPage() {
         </section>
 
         {/* Mission & Vision */}
-        <section className="py-24 bg-gradient-to-br from-emerald-900 to-emerald-800 -mx-4 px-4 rounded-3xl text-white mb-24">
+        <section className="py-24 bg-gradient-to-br from-amber-900 to-amber-800 -mx-4 px-4 rounded-3xl text-white mb-24">
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
             <div className="opacity-0 animate-[fadeInUp_0.6s_ease-out_1s_forwards]">
-              <div className="w-16 h-16 bg-emerald-700/30 rounded-2xl flex items-center justify-center mb-6">
-                <Heart className="h-8 w-8 text-emerald-300" />
+              <div className="w-16 h-16 bg-amber-700/30 rounded-2xl flex items-center justify-center mb-6">
+                <Heart className="h-8 w-8 text-amber-300" />
               </div>
               <h3 className="text-3xl font-bold mb-4">Our Mission</h3>
-              <p className="text-emerald-100 text-lg leading-relaxed">
+              <p className="text-amber-100 text-lg leading-relaxed">
                 To craft unforgettable Himalayan adventures that immerse travelers in nature, local traditions, and self-discovery. Every journey is designed to leave a meaningful impact on both you and the communities you visit.
               </p>
             </div>
             <div className="opacity-0 animate-[fadeInUp_0.6s_ease-out_1.2s_forwards]">
-              <div className="w-16 h-16 bg-emerald-700/30 rounded-2xl flex items-center justify-center mb-6">
-                <Globe className="h-8 w-8 text-emerald-300" />
+              <div className="w-16 h-16 bg-amber-700/30 rounded-2xl flex items-center justify-center mb-6">
+                <Globe className="h-8 w-8 text-amber-300" />
               </div>
               <h3 className="text-3xl font-bold mb-4">Our Vision</h3>
-              <p className="text-emerald-100 text-lg leading-relaxed">
+              <p className="text-amber-100 text-lg leading-relaxed">
                 To set the standard for sustainable Himalayan adventures, inspiring travelers to explore with respect and curiosity, while preserving the mountains’ pristine beauty, fragile ecosystems, and unique cultural legacy for generations to come.
               </p>
             </div>
@@ -106,7 +106,7 @@ export default function AboutPage() {
         {/* Why Choose Us */}
         <section className="py-24">
           <div className="text-center mb-16">
-            <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">What Sets Us Apart</h2>
+            <h2 className="text-sm font-bold text-amber-700 uppercase tracking-widest mb-3">What Sets Us Apart</h2>
             <h3 className="text-4xl font-bold text-stone-900 mb-4">Why Choose Zenith Treks & Expedition?</h3>
             <p className="text-stone-600 text-lg max-w-2xl mx-auto">
               By combining the expertise of seasoned Himalayan guides with international best practices, we deliver journeys that leave lasting memories.
@@ -160,7 +160,7 @@ export default function AboutPage() {
                 className="text-center p-8 bg-white rounded-2xl shadow-sm border border-stone-100 hover:shadow-xl hover:scale-105 transition-all duration-300 group opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]"
                 style={{ animationDelay: `${1.4 + (i * 0.1)}s` }}
               >
-                <div className="text-emerald-700 mb-4 flex justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">{item.icon}</div>
+                <div className="text-amber-700 mb-4 flex justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">{item.icon}</div>
                 <h3 className="font-bold text-xl mb-3 text-stone-900">{item.title}</h3>
                 <p className="text-stone-600 leading-relaxed">{item.desc}</p>
               </div>
@@ -172,7 +172,7 @@ export default function AboutPage() {
         <section className="py-24 bg-white rounded-3xl px-8 md:px-16 mb-24">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">Our Commitments</h2>
+              <h2 className="text-sm font-bold text-amber-700 uppercase tracking-widest mb-3">Our Commitments</h2>
               <h3 className="text-4xl font-bold text-stone-900 mb-8">What We Stand For</h3>
               <div className="space-y-6">
                 {[
@@ -186,8 +186,8 @@ export default function AboutPage() {
                   "Emergency support and medical care included on every trek"
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-4 group">
-                    <div className="flex-shrink-0 w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center group-hover:bg-emerald-700 transition-colors">
-                      <CheckCircle className="h-4 w-4 text-emerald-700 group-hover:text-white transition-colors" />
+                    <div className="flex-shrink-0 w-6 h-6 bg-amber-100 rounded-full flex items-center justify-center group-hover:bg-amber-700 transition-colors">
+                      <CheckCircle className="h-4 w-4 text-amber-700 group-hover:text-white transition-colors" />
                     </div>
                     <p className="text-stone-700 text-lg">{item}</p>
                   </div>
@@ -208,17 +208,17 @@ export default function AboutPage() {
         {/* Testimonial */}
         <section className="py-24 bg-stone-900 -mx-4 px-4 rounded-3xl text-white mb-24">
           <div className="max-w-4xl mx-auto text-center">
-            <Quote className="h-16 w-16 text-emerald-400 mx-auto mb-8 opacity-50" />
+            <Quote className="h-16 w-16 text-amber-400 mx-auto mb-8 opacity-50" />
             <blockquote className="text-2xl md:text-3xl font-medium leading-relaxed mb-8">
               "Our trek with Zenith Treks & Expedition was unforgettable. The guides’ expertise, stunning Himalayan landscapes, and authentic cultural encounters made every day special. We weren’t just walking trails; we were connecting with a way of life and discovering the true spirit of Nepal"
             </blockquote>
             <div className="flex items-center justify-center gap-4">
-              <div className="w-16 h-16 bg-emerald-700 rounded-full flex items-center justify-center text-white font-bold text-xl">
+              <div className="w-16 h-16 bg-amber-700 rounded-full flex items-center justify-center text-white font-bold text-xl">
                 M
               </div>
               <div className="text-left">
                 <div className="font-bold text-lg">Liam Johnson</div>
-                <div className="text-emerald-300">USA • Manaslu Circuit Trek 2025</div>
+                <div className="text-amber-300">USA • Manaslu Circuit Trek 2025</div>
               </div>
             </div>
             <div className="flex justify-center gap-1 mt-6">
@@ -232,7 +232,7 @@ export default function AboutPage() {
         {/* Team Section */}
         <section className="py-24">
           <div className="text-center mb-16">
-            <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">Meet The Team</h2>
+            <h2 className="text-sm font-bold text-amber-700 uppercase tracking-widest mb-3">Meet The Team</h2>
             <h3 className="text-4xl font-bold text-stone-900 mb-4">Expert Guides & Support Staff</h3>
             <p className="text-stone-600 text-lg max-w-2xl mx-auto">
               From trekking experts to local support staff, our team is committed to guiding you safely and immersing you in Nepal’s mountains and culture.
@@ -260,7 +260,7 @@ export default function AboutPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                     <h4 className="text-xl font-bold mb-1">{member.name}</h4>
-                    <p className="text-emerald-300 text-sm">{member.role}</p>
+                    <p className="text-amber-300 text-sm">{member.role}</p>
                   </div>
                 </div>
               </div>
@@ -270,7 +270,7 @@ export default function AboutPage() {
 
         {/* Call to Action */}
         <section className="text-center max-w-4xl mx-auto py-24">
-          <Compass className="h-16 w-16 text-emerald-700 mx-auto mb-6 animate-[spin_20s_linear_infinite]" />
+          <Compass className="h-16 w-16 text-amber-700 mx-auto mb-6 animate-[spin_20s_linear_infinite]" />
           <h2 className="text-4xl font-bold text-stone-900 mb-6">Ready for Your Next Adventure?</h2>
           <p className="text-stone-600 text-lg mb-10 max-w-2xl mx-auto">
             Step into the Himalayas with confidence. Our expert team ensures every trek is safe, immersive, and unforgettable.
@@ -278,7 +278,7 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/trips"
-              className="px-8 py-4 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-lg rounded-full transition-all shadow-lg hover:shadow-xl hover:scale-105"
+              className="px-8 py-4 bg-amber-700 hover:bg-amber-800 text-white font-bold text-lg rounded-full transition-all shadow-lg hover:shadow-xl hover:scale-105"
             >
               Explore Our Trips
             </Link>

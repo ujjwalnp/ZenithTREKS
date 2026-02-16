@@ -105,7 +105,7 @@ export default function ReviewsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Write a Review */}
           <div className="bg-white rounded-3xl shadow-sm border border-stone-200 p-8">
-            <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">
+            <h2 className="text-sm font-bold text-amber-700 uppercase tracking-widest mb-3">
               Share Your Experience
             </h2>
             <h3 className="text-3xl font-bold text-stone-900 mb-6">Write a Review</h3>
@@ -122,7 +122,7 @@ export default function ReviewsSection() {
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full rounded-xl border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600 bg-stone-50"
+                  className="w-full rounded-xl border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-amber-600 bg-stone-50"
                   placeholder="First name, or full name"
                   required
                 />
@@ -143,19 +143,19 @@ export default function ReviewsSection() {
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                   rows={4}
-                  className="w-full rounded-xl border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600 bg-stone-50 resize-none"
+                  className="w-full rounded-xl border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-amber-600 bg-stone-50 resize-none"
                   placeholder="Share what you loved, what stood out, and any tips for others..."
                   required
                 />
               </div>
 
               {error && <p className="text-sm text-red-600">{error}</p>}
-              {success && <p className="text-sm text-emerald-700">{success}</p>}
+              {success && <p className="text-sm text-amber-700">{success}</p>}
 
               <button
                 type="submit"
                 disabled={submitting}
-                className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-emerald-700 text-white text-sm font-semibold hover:bg-emerald-800 disabled:opacity-60 disabled:cursor-not-allowed transition-colors"
+                className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-amber-700 text-white text-sm font-semibold hover:bg-amber-800 disabled:opacity-60 disabled:cursor-not-allowed transition-colors"
               >
                 {submitting ? "Submitting..." : "Submit Review"}
               </button>
@@ -164,7 +164,7 @@ export default function ReviewsSection() {
 
           {/* Recent Reviews */}
           <div>
-            <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-3">
+            <h2 className="text-sm font-bold text-amber-700 uppercase tracking-widest mb-3">
               Traveler Reviews
             </h2>
             <h3 className="text-3xl font-bold text-stone-900 mb-6">What Guests Are Saying</h3>
@@ -212,7 +212,7 @@ export default function ReviewsSection() {
                   type="button"
                   onClick={() => fetchReviews(page + 1, true)}
                   disabled={loading}
-                  className="text-sm font-semibold text-emerald-700 hover:text-emerald-800 disabled:opacity-60"
+                  className="text-sm font-semibold text-amber-700 hover:text-amber-800 disabled:opacity-60"
                 >
                   {loading ? "Loading..." : "Show more reviews"}
                 </button>

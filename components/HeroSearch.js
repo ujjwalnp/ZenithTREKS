@@ -39,7 +39,7 @@ export default function HeroSearch() {
             className="flex-1 outline-none"
           />
           <button type="submit">
-            <Search className="h-5 w-5 text-emerald-700" />
+            <Search className="h-5 w-5 text-amber-700" />
           </button>
         </div>
 
@@ -76,7 +76,7 @@ export default function HeroSearch() {
 
           <button
             type="submit"
-            className="px-6 py-3 bg-emerald-700 text-white rounded-xl"
+            className="px-6 py-3 bg-amber-700 text-white rounded-xl"
           >
             Search
           </button>

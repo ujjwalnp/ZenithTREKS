@@ -43,21 +43,21 @@ export default function Footer() {
             <div className="flex gap-3">
               <a
                 href="#"
-                className="w-9 h-9 sm:w-10 sm:h-10 bg-stone-900 hover:bg-emerald-600 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-stone-900 hover:bg-amber-600 rounded-full flex items-center justify-center transition-all hover:scale-110"
                 aria-label="Facebook"
               >
                 <Facebook className="h-4 w-4" />
               </a>
               <a
                 href="#"
-                className="w-9 h-9 sm:w-10 sm:h-10 bg-stone-900 hover:bg-emerald-600 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-stone-900 hover:bg-amber-600 rounded-full flex items-center justify-center transition-all hover:scale-110"
                 aria-label="Instagram"
               >
                 <Instagram className="h-4 w-4" />
               </a>
               <a
                 href="#"
-                className="w-9 h-9 sm:w-10 sm:h-10 bg-stone-900 hover:bg-emerald-600 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-stone-900 hover:bg-amber-600 rounded-full flex items-center justify-center transition-all hover:scale-110"
                 aria-label="Twitter"
               >
                 <Twitter className="h-4 w-4" />
@@ -70,17 +70,17 @@ export default function Footer() {
             <h4 className="text-white font-bold text-base sm:text-lg mb-4 sm:mb-6">Quick Links</h4>
             <ul className="space-y-2 sm:space-y-3">
               <li>
-                <Link href="/trips" className="hover:text-emerald-500 transition-colors hover:translate-x-1 inline-block text-sm sm:text-base">
+                <Link href="/trips" className="hover:text-amber-500 transition-colors hover:translate-x-1 inline-block text-sm sm:text-base">
                   All Expeditions
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-emerald-500 transition-colors hover:translate-x-1 inline-block text-sm sm:text-base">
+                <Link href="/contact" className="hover:text-amber-500 transition-colors hover:translate-x-1 inline-block text-sm sm:text-base">
                   Contact us
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-emerald-500 transition-colors hover:translate-x-1 inline-block text-sm sm:text-base">
+                <Link href="/about" className="hover:text-amber-500 transition-colors hover:translate-x-1 inline-block text-sm sm:text-base">
                   About Us
                 </Link>
               </li>
@@ -92,12 +92,12 @@ export default function Footer() {
             <h4 className="text-white font-bold text-base sm:text-lg mb-4 sm:mb-6">View Expedition Types</h4>
             <ul className="space-y-2 sm:space-y-3">
               <li>
-                <Link href="/destinations/trips" className="hover:text-emerald-500 transition-colors hover:translate-x-1 inline-block text-sm sm:text-base">
+                <Link href="/destinations/trips" className="hover:text-amber-500 transition-colors hover:translate-x-1 inline-block text-sm sm:text-base">
                   Trips
                 </Link>
               </li>
               <li>
-                <Link href="/destinations/treks" className="hover:text-emerald-500 transition-colors hover:translate-x-1 inline-block text-sm sm:text-base">
+                <Link href="/destinations/treks" className="hover:text-amber-500 transition-colors hover:translate-x-1 inline-block text-sm sm:text-base">
                   Treks
                 </Link>
               </li>
@@ -109,21 +109,21 @@ export default function Footer() {
             <h4 className="text-white font-bold text-base sm:text-lg mb-4 sm:mb-6">Contact Us</h4>
             <ul className="space-y-3 sm:space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-amber-600 mt-0.5 flex-shrink-0" />
                 <span className="text-stone-400 text-sm sm:text-base">
                   Budhanilkantha, Kathmandu<br />
                   Nepal
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-600 flex-shrink-0" />
-                <a href="tel:+9779844159245" className="text-stone-400 hover:text-emerald-500 transition-colors text-sm sm:text-base break-all">
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-amber-600 flex-shrink-0" />
+                <a href="tel:+9779844159245" className="text-stone-400 hover:text-amber-500 transition-colors text-sm sm:text-base break-all">
                   +977 9844159245
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-600 flex-shrink-0" />
-                <a href="mailto:trekszenith@gmail.com" className="text-stone-400 hover:text-emerald-500 transition-colors text-sm sm:text-base break-all">
+                <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-amber-600 flex-shrink-0" />
+                <a href="mailto:trekszenith@gmail.com" className="text-stone-400 hover:text-amber-500 transition-colors text-sm sm:text-base break-all">
                   info@zenithtrekexped.com
                 </a>
               </li>
@@ -138,13 +138,13 @@ export default function Footer() {
           </p>
           <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm">
-              <Link href="/privacy" className="text-stone-500 hover:text-emerald-500 transition-colors">
+              <Link href="/privacy" className="text-stone-500 hover:text-amber-500 transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-stone-500 hover:text-emerald-500 transition-colors">
+              <Link href="/terms" className="text-stone-500 hover:text-amber-500 transition-colors">
                 Terms of Service
               </Link>
-              <Link href="/cookies" className="text-stone-500 hover:text-emerald-500 transition-colors">
+              <Link href="/cookies" className="text-stone-500 hover:text-amber-500 transition-colors">
                 Cookie Policy
               </Link>
             </div>
@@ -162,7 +162,7 @@ export default function Footer() {
               href="https://techsapana.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-cyan-600 hover:text-emerald-400 transition-colors"
+              className="text-cyan-600 hover:text-amber-400 transition-colors"
             >
               TechSapana
             </a>

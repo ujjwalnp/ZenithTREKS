@@ -69,7 +69,7 @@ export default function LoginPage() {
           )}
 
           {success && (
-            <div className="mb-6 p-4 bg-emerald-50 text-emerald-700 rounded-lg text-sm font-medium border border-emerald-100">
+            <div className="mb-6 p-4 bg-amber-50 text-amber-700 rounded-lg text-sm font-medium border border-amber-100">
               {success}
             </div>
           )}
@@ -80,7 +80,7 @@ export default function LoginPage() {
               <input
                 type="email"
                 required
-                className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-all outline-none"
+                className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all outline-none"
                 placeholder="you@example.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -91,7 +91,7 @@ export default function LoginPage() {
               <input
                 type="password"
                 required
-                className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-all outline-none"
+                className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all outline-none"
                 placeholder="••••••••"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -100,7 +100,7 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-emerald-700 text-white py-3.5 rounded-xl font-bold text-lg hover:bg-emerald-800 transition-all shadow-md active:scale-[0.98] disabled:opacity-50"
+              className="w-full bg-amber-700 text-white py-3.5 rounded-xl font-bold text-lg hover:bg-amber-800 transition-all shadow-md active:scale-[0.98] disabled:opacity-50"
             >
               {loading ? "Signing in..." : "Sign In"}
             </button>
@@ -108,7 +108,7 @@ export default function LoginPage() {
 
           <div className="mt-8 text-center text-stone-600">
             Don&apos;t have an account?{" "}
-            <Link href="/signup" className="text-emerald-700 font-bold hover:underline">
+            <Link href="/signup" className="text-amber-700 font-bold hover:underline">
               Create one
             </Link>
           </div>

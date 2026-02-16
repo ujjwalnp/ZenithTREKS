@@ -192,7 +192,7 @@ export default function AdminDashboard() {
   const getStatusColor = (status) => {
     switch (status) {
       case "confirmed":
-        return "bg-emerald-100 text-emerald-700"
+        return "bg-amber-100 text-amber-700"
       case "cancelled":
         return "bg-red-100 text-red-700"
       default:
@@ -220,7 +220,7 @@ export default function AdminDashboard() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-stone-50">
-        <Loader2 className="h-10 w-10 animate-spin text-emerald-700" />
+        <Loader2 className="h-10 w-10 animate-spin text-amber-700" />
       </div>
     )
   }
@@ -236,15 +236,15 @@ export default function AdminDashboard() {
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           <TabsList className="bg-white border border-stone-200 rounded-xl p-1 mb-8">
-            <TabsTrigger value="trips" className="data-[state=active]:bg-emerald-700 data-[state=active]:text-white">
+            <TabsTrigger value="trips" className="data-[state=active]:bg-amber-700 data-[state=active]:text-white">
               <Package className="h-4 w-4 mr-2" />
               Trips
             </TabsTrigger>
-            <TabsTrigger value="bookings" className="data-[state=active]:bg-emerald-700 data-[state=active]:text-white">
+            <TabsTrigger value="bookings" className="data-[state=active]:bg-amber-700 data-[state=active]:text-white">
               <Calendar className="h-4 w-4 mr-2" />
               Bookings
             </TabsTrigger>
-            <TabsTrigger value="gallery" className="data-[state=active]:bg-emerald-700 data-[state=active]:text-white">
+            <TabsTrigger value="gallery" className="data-[state=active]:bg-amber-700 data-[state=active]:text-white">
               <ImageIcon className="h-4 w-4 mr-2" />
               Gallery
             </TabsTrigger>
@@ -259,7 +259,7 @@ export default function AdminDashboard() {
                   setFormData({ title: "", slug: "", country: "trips", price: "", thumbnail: "", description: "" })
                   setIsModalOpen(true)
                 }}
-                className="bg-emerald-700 text-white px-6 py-3 rounded-xl font-bold flex items-center shadow-lg hover:bg-emerald-800 transition-all"
+                className="bg-amber-700 text-white px-6 py-3 rounded-xl font-bold flex items-center shadow-lg hover:bg-amber-800 transition-all"
               >
                 <Plus className="mr-2 h-5 w-5" /> Add New Trip
               </button>
@@ -286,7 +286,7 @@ export default function AdminDashboard() {
                   </div>
                   <div className="p-6 grow">
                     <h3 className="text-xl font-bold text-stone-900 mb-1">{trip.title}</h3>
-                    <p className="text-emerald-700 font-bold mb-4">$ {Number(trip.price).toLocaleString()}</p>
+                    <p className="text-amber-700 font-bold mb-4">$ {Number(trip.price).toLocaleString()}</p>
                     <div className="flex items-center space-x-3 pt-4 border-t border-stone-100">
                       <button
                         onClick={() => {
@@ -326,7 +326,7 @@ export default function AdminDashboard() {
 
             {bookingsLoading ? (
               <div className="flex items-center justify-center py-12">
-                <Loader2 className="h-8 w-8 animate-spin text-emerald-700" />
+                <Loader2 className="h-8 w-8 animate-spin text-amber-700" />
               </div>
             ) : bookings.length === 0 ? (
               <div className="text-center py-12 bg-white rounded-3xl border border-stone-100">
@@ -371,21 +371,21 @@ export default function AdminDashboard() {
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
                           <div className="flex items-center space-x-2 text-stone-600">
-                            <Users className="h-5 w-5 text-emerald-700" />
+                            <Users className="h-5 w-5 text-amber-700" />
                             <div>
                               <p className="text-xs font-bold uppercase text-stone-400">Participants</p>
                               <p className="font-bold">{booking.participants}</p>
                             </div>
                           </div>
                           <div className="flex items-center space-x-2 text-stone-600">
-                            <Calendar className="h-5 w-5 text-emerald-700" />
+                            <Calendar className="h-5 w-5 text-amber-700" />
                             <div>
                               <p className="text-xs font-bold uppercase text-stone-400">Booking Date</p>
                               <p className="font-bold">{formatDate(booking.booking_date)}</p>
                             </div>
                           </div>
                           <div className="flex items-center space-x-2 text-stone-600">
-                            <Calendar className="h-5 w-5 text-emerald-700" />
+                            <Calendar className="h-5 w-5 text-amber-700" />
                             <div>
                               <p className="text-xs font-bold uppercase text-stone-400">Booked On</p>
                               <p className="font-bold">{formatDate(booking.created_at)}</p>
@@ -394,7 +394,7 @@ export default function AdminDashboard() {
                           <div className="flex items-center space-x-2 text-stone-600">
                             <div>
                               <p className="text-xs font-bold uppercase text-stone-400">Total Price</p>
-                              <p className="font-black text-emerald-700">${Number(booking.total_price).toLocaleString()}</p>
+                              <p className="font-black text-amber-700">${Number(booking.total_price).toLocaleString()}</p>
                             </div>
                           </div>
                         </div>
@@ -422,7 +422,7 @@ export default function AdminDashboard() {
                         <select
                           value={booking.status || "pending"}
                           onChange={(e) => updateBookingStatus(booking.id, e.target.value)}
-                          className="px-4 py-2 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-emerald-500 font-medium text-sm"
+                          className="px-4 py-2 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-amber-500 font-medium text-sm"
                         >
                           <option value="pending">Pending</option>
                           <option value="confirmed">Confirmed</option>
@@ -442,7 +442,7 @@ export default function AdminDashboard() {
                 <h2 className="text-2xl font-bold text-stone-900">Gallery Images</h2>
                 <p className="text-stone-500 mt-1">Upload and manage gallery photos</p>
               </div>
-              <label className="inline-flex items-center space-x-2 bg-emerald-700 text-white px-5 py-3 rounded-xl font-bold shadow-lg hover:bg-emerald-800 transition-all cursor-pointer">
+              <label className="inline-flex items-center space-x-2 bg-amber-700 text-white px-5 py-3 rounded-xl font-bold shadow-lg hover:bg-amber-800 transition-all cursor-pointer">
                 <Plus className="h-4 w-4" />
                 <span>{galleryUploading ? "Uploading..." : "Upload Image"}</span>
                 <input
@@ -463,7 +463,7 @@ export default function AdminDashboard() {
 
             {galleryLoading ? (
               <div className="flex items-center justify-center py-12">
-                <Loader2 className="h-8 w-8 animate-spin text-emerald-700" />
+                <Loader2 className="h-8 w-8 animate-spin text-amber-700" />
               </div>
             ) : galleryImages.length === 0 ? (
               <div className="text-center py-12 bg-white rounded-3xl border border-stone-100">
@@ -504,7 +504,7 @@ export default function AdminDashboard() {
                   <input
                     type="text"
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-emerald-500"
+                    className="w-full px-4 py-3 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-amber-500"
                     value={formData.title}
                     onChange={(e) => {
                       const newTitle = e.target.value
@@ -529,7 +529,7 @@ export default function AdminDashboard() {
                   <label className="block text-sm font-bold text-stone-700 mb-2">Slug (optional)</label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-emerald-500"
+                    className="w-full px-4 py-3 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-amber-500"
                     placeholder="auto-generated from title if left blank"
                     value={formData.slug}
                     onChange={(e) =>
@@ -547,7 +547,7 @@ export default function AdminDashboard() {
                   <label className="block text-sm font-bold text-stone-700 mb-2">Type</label>
                   <select
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-emerald-500"
+                    className="w-full px-4 py-3 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-amber-500"
                     value={formData.country}
                     onChange={(e) => setFormData({ ...formData, country: e.target.value })}
                   >
@@ -563,7 +563,7 @@ export default function AdminDashboard() {
                   <input
                     type="number"
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-emerald-500"
+                    className="w-full px-4 py-3 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-amber-500"
                     value={formData.price}
                     onChange={(e) => setFormData({ ...formData, price: e.target.value })}
                   />
@@ -615,7 +615,7 @@ export default function AdminDashboard() {
                 </button>
                 <button
                   type="submit"
-                  className="bg-emerald-700 text-white px-8 py-3 rounded-xl font-bold shadow-lg hover:bg-emerald-800 transition-all"
+                  className="bg-amber-700 text-white px-8 py-3 rounded-xl font-bold shadow-lg hover:bg-amber-800 transition-all"
                 >
                   {editingTrip ? "Update Trip" : "Create Trip"}
                 </button>

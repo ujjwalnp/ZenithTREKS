@@ -63,18 +63,18 @@ export default function Navbar() {
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-stone-600 hover:text-emerald-700 font-medium transition-colors">
+            <Link href="/" className="text-stone-600 hover:text-amber-700 font-medium transition-colors">
               Home
             </Link>
-            <Link href="/about" className="text-stone-600 hover:text-emerald-700 font-medium transition-colors">
+            <Link href="/about" className="text-stone-600 hover:text-amber-700 font-medium transition-colors">
               About
             </Link>
-            <Link href="/gallery" className="text-stone-600 hover:text-emerald-700 font-medium transition-colors">
+            <Link href="/gallery" className="text-stone-600 hover:text-amber-700 font-medium transition-colors">
               Gallery
             </Link>
 
             <div className="relative group">
-              <button className="flex items-center text-stone-600 group-hover:text-emerald-700 font-medium transition-colors">
+              <button className="flex items-center text-stone-600 group-hover:text-amber-700 font-medium transition-colors">
                 Destinations <ChevronDown className="ml-1 h-4 w-4" />
               </button>
               <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-stone-100 shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
@@ -82,7 +82,7 @@ export default function Navbar() {
                   <Link
                     key={country}
                     href={`/destinations/${country.toLowerCase()}`}
-                    className="block px-4 py-3 text-stone-600 hover:bg-stone-50 hover:text-emerald-700 transition-colors"
+                    className="block px-4 py-3 text-stone-600 hover:bg-stone-50 hover:text-amber-700 transition-colors"
                   >
                     {country}
                   </Link>
@@ -93,7 +93,7 @@ export default function Navbar() {
             <div className="relative group">
               <Link
                 href="/trips"
-                className="flex items-center text-stone-600 group-hover:text-emerald-700 font-medium transition-colors"
+                className="flex items-center text-stone-600 group-hover:text-amber-700 font-medium transition-colors"
               >
                 Expeditions <ChevronDown className="ml-1 h-4 w-4" />
               </Link>
@@ -109,7 +109,7 @@ export default function Navbar() {
                       <Link
                         key={trip.id}
                         href={`/trips/${trip.slug || trip.id}`}
-                        className="text-sm text-stone-600 hover:text-emerald-700 py-1 truncate"
+                        className="text-sm text-stone-600 hover:text-amber-700 py-1 truncate"
                       >
                         {trip.title}
                       </Link>
@@ -119,14 +119,14 @@ export default function Navbar() {
                 <div className="px-4 py-3 border-t border-stone-100">
                   <Link
                     href="/trips"
-                    className="text-xs font-semibold text-emerald-700 hover:text-emerald-800"
+                    className="text-xs font-semibold text-amber-700 hover:text-amber-800"
                   >
                     View all expeditions →
                   </Link>
                 </div>
               </div>
             </div>
-            <Link href="/contact" className="text-stone-600 hover:text-emerald-700 font-medium transition-colors">
+            <Link href="/contact" className="text-stone-600 hover:text-amber-700 font-medium transition-colors">
               Contact
             </Link>
           </div>
@@ -158,7 +158,7 @@ export default function Navbar() {
             ) : (
               <Link
                 href="/login"
-                className="bg-emerald-700 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-emerald-800 transition-all shadow-md hover:shadow-lg"
+                className="bg-amber-700 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-amber-800 transition-all shadow-md hover:shadow-lg"
               >
                 Sign In
               </Link>
@@ -227,7 +227,7 @@ export default function Navbar() {
                     <Link
                       key={trip.id}
                       href={`/trips/${trip.slug || trip.id}`}
-                      className="block px-3 py-2 text-sm text-stone-700 hover:text-emerald-700"
+                      className="block px-3 py-2 text-sm text-stone-700 hover:text-amber-700"
                       onClick={() => setIsOpen(false)}
                     >
                       {trip.title}
@@ -236,7 +236,7 @@ export default function Navbar() {
                 )}
                 <Link
                   href="/trips"
-                  className="block px-3 py-2 text-sm font-semibold text-emerald-700 hover:text-emerald-800"
+                  className="block px-3 py-2 text-sm font-semibold text-amber-700 hover:text-amber-800"
                   onClick={() => setIsOpen(false)}
                 >
                   View all expeditions →
@@ -256,7 +256,7 @@ export default function Navbar() {
               <>
                 <Link 
                   href={user.role === "admin" ? "/admin" : "/profile"}
-                  className="block text-emerald-700 font-bold py-2"
+                  className="block text-amber-700 font-bold py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   My Profile
@@ -278,7 +278,7 @@ export default function Navbar() {
             ) : (
               <Link 
                 href="/login" 
-                className="block text-center bg-emerald-700 text-white py-3 rounded-xl font-bold"
+                className="block text-center bg-amber-700 text-white py-3 rounded-xl font-bold"
                 onClick={() => setIsOpen(false)}
               >
                 Sign In

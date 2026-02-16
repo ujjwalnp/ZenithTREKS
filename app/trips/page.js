@@ -71,26 +71,26 @@ export default function TripsPage() {
       
       {/* Hero Banner */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-700" />
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-900 via-amber-800 to-amber-700" />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }} />
         </div>
         <div className="relative max-w-7xl mx-auto text-center">
-          <Mountain className="h-16 w-16 text-emerald-300 mx-auto mb-6 opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]" />
+          <Mountain className="h-16 w-16 text-amber-300 mx-auto mb-6 opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]" />
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 opacity-0 animate-[fadeInUp_0.6s_ease-out_0.2s_forwards]">
             All Expeditions
           </h1>
-          <p className="text-emerald-100 text-xl max-w-2xl mx-auto mb-8 opacity-0 animate-[fadeInUp_0.6s_ease-out_0.4s_forwards]">
+          <p className="text-amber-100 text-xl max-w-2xl mx-auto mb-8 opacity-0 animate-[fadeInUp_0.6s_ease-out_0.4s_forwards]">
             Browse our full collection of Himalayan treks, mountain climbs, and cultural journeys. Filtered by quality and safety.
           </p>
-          <div className="flex items-center justify-center gap-4 text-emerald-200 opacity-0 animate-[fadeInUp_0.6s_ease-out_0.6s_forwards]">
+          <div className="flex items-center justify-center gap-4 text-amber-200 opacity-0 animate-[fadeInUp_0.6s_ease-out_0.6s_forwards]">
             <div className="flex items-center gap-2">
               <Mountain className="h-5 w-5" />
               <span>{trips.length} Adventures</span>
             </div>
-            <span className="text-emerald-400">•</span>
+            <span className="text-amber-400">•</span>
             <div className="flex items-center gap-2">
               <MapPin className="h-5 w-5" />
               <span>Nepal</span>
@@ -108,7 +108,7 @@ export default function TripsPage() {
               <input
                 type="text"
                 placeholder="Search expeditions..."
-                className="w-full pl-12 pr-4 py-3 rounded-xl border border-stone-200 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-all"
+                className="w-full pl-12 pr-4 py-3 rounded-xl border border-stone-200 focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500/20 transition-all"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
@@ -177,21 +177,21 @@ export default function TripsPage() {
                 </div>
               </div>
               <div className="p-8 flex-grow flex flex-col">
-                <h3 className="text-2xl font-bold text-stone-900 mb-3 group-hover:text-emerald-700 transition-colors leading-tight">
+                <h3 className="text-2xl font-bold text-stone-900 mb-3 group-hover:text-amber-700 transition-colors leading-tight">
                   {trip.title}
                 </h3>
                 <div className="flex items-center text-stone-500 text-sm mb-auto">
-                  <MapPin className="h-4 w-4 mr-2 text-emerald-600 flex-shrink-0" />
+                  <MapPin className="h-4 w-4 mr-2 text-amber-600 flex-shrink-0" />
                   <span>{trip.country} Expedition</span>
                 </div>
                 <div className="pt-6 mt-6 border-t border-stone-100 flex items-center justify-between">
                   <div>
                     <span className="text-stone-400 text-xs block uppercase tracking-wider mb-1 font-semibold">Starting from</span>
-                    <span className="text-2xl font-black text-emerald-700">
+                    <span className="text-2xl font-black text-amber-700">
                       $ {Number(trip.price).toLocaleString()}
                     </span>
                   </div>
-                  <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center group-hover:bg-emerald-700 group-hover:text-white group-hover:scale-110 transition-all duration-300">
+                  <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center group-hover:bg-amber-700 group-hover:text-white group-hover:scale-110 transition-all duration-300">
                     <ArrowRight className="h-5 w-5" />
                   </div>
                 </div>
@@ -211,7 +211,7 @@ export default function TripsPage() {
             </p>
             <Link
               href="/"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-700 text-white rounded-full font-semibold hover:bg-emerald-800 transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-amber-700 text-white rounded-full font-semibold hover:bg-amber-800 transition-all"
             >
               Return Home
               <ArrowRight className="h-5 w-5" />
@@ -230,7 +230,7 @@ export default function TripsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="px-8 py-4 bg-emerald-700 text-white rounded-full font-bold text-lg hover:bg-emerald-600 hover:scale-105 transition-all shadow-lg"
+              className="px-8 py-4 bg-amber-700 text-white rounded-full font-bold text-lg hover:bg-amber-600 hover:scale-105 transition-all shadow-lg"
             >
               Request Custom Trip
             </Link>

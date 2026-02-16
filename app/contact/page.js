@@ -63,7 +63,7 @@ export default function ContactPage() {
 
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="bg-emerald-100 p-3 rounded-xl text-emerald-700">
+                <div className="bg-amber-100 p-3 rounded-xl text-amber-700">
                   <MapPin className="h-6 w-6" />
                 </div>
                 <div>
@@ -74,7 +74,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-emerald-100 p-3 rounded-xl text-emerald-700">
+                <div className="bg-amber-100 p-3 rounded-xl text-amber-700">
                   <Phone className="h-6 w-6" />
                 </div>
                 <div>
@@ -86,7 +86,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-emerald-100 p-3 rounded-xl text-emerald-700">
+                <div className="bg-amber-100 p-3 rounded-xl text-amber-700">
                   <Mail className="h-6 w-6" />
                 </div>
                 <div>
@@ -97,7 +97,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-emerald-100 p-3 rounded-xl text-emerald-700">
+                <div className="bg-amber-100 p-3 rounded-xl text-amber-700">
                   <Clock className="h-6 w-6" />
                 </div>
                 <div>
@@ -112,7 +112,7 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="lg:col-span-2 bg-white p-8 md:p-12 rounded-3xl shadow-xl shadow-stone-200/50 border border-stone-100">
             <div className="flex items-center space-x-3 mb-8">
-              <MessageSquare className="h-8 w-8 text-emerald-700" />
+              <MessageSquare className="h-8 w-8 text-amber-700" />
               <h2 className="text-3xl font-bold text-stone-900">Send a Message</h2>
             </div>
 
@@ -120,7 +120,7 @@ export default function ContactPage() {
               <div
                 className={`mb-8 p-4 rounded-xl text-sm font-medium ${
                   status.type === "success"
-                    ? "bg-emerald-50 text-emerald-700 border border-emerald-100"
+                    ? "bg-amber-50 text-amber-700 border border-amber-100"
                     : status.type === "error"
                       ? "bg-red-50 text-red-700 border border-red-100"
                       : "bg-stone-50 text-stone-700 border border-stone-100"
@@ -139,7 +139,7 @@ export default function ContactPage() {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-5 py-4 bg-stone-50 border border-stone-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-all outline-none"
+                    className="w-full px-5 py-4 bg-stone-50 border border-stone-200 rounded-xl focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all outline-none"
                     placeholder="Enter your name"
                   />
                 </div>
@@ -150,7 +150,7 @@ export default function ContactPage() {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-5 py-4 bg-stone-50 border border-stone-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-all outline-none"
+                    className="w-full px-5 py-4 bg-stone-50 border border-stone-200 rounded-xl focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all outline-none"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -163,7 +163,7 @@ export default function ContactPage() {
                   required
                   value={formData.subject}
                   onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                  className="w-full px-5 py-4 bg-stone-50 border border-stone-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-all outline-none"
+                  className="w-full px-5 py-4 bg-stone-50 border border-stone-200 rounded-xl focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all outline-none"
                   placeholder="How can we help you?"
                 />
               </div>
@@ -175,7 +175,7 @@ export default function ContactPage() {
                   rows={5}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-5 py-4 bg-stone-50 border border-stone-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-all outline-none resize-none"
+                  className="w-full px-5 py-4 bg-stone-50 border border-stone-200 rounded-xl focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all outline-none resize-none"
                   placeholder="Share your travel requirements or questions..."
                 ></textarea>
               </div>
@@ -183,7 +183,7 @@ export default function ContactPage() {
               <button
                 type="submit"
                 disabled={loading}
-                className={`w-full md:w-auto px-10 py-4 bg-emerald-700 text-white font-bold rounded-xl shadow-lg shadow-emerald-700/20 hover:bg-emerald-800 transition-all flex items-center justify-center space-x-2 ${
+                className={`w-full md:w-auto px-10 py-4 bg-amber-700 text-white font-bold rounded-xl shadow-lg shadow-amber-700/20 hover:bg-amber-800 transition-all flex items-center justify-center space-x-2 ${
                   loading ? "opacity-70 cursor-not-allowed" : ""
                 }`}
               >
@@ -200,7 +200,7 @@ export default function ContactPage() {
         {/* In a real app, you would embed a Google Map here */}
         <div className="w-full h-full flex items-center justify-center bg-stone-100 border-t border-stone-200">
           <div className="text-center p-8">
-            <MapPin className="h-12 w-12 text-emerald-700 mx-auto mb-4" />
+            <MapPin className="h-12 w-12 text-amber-700 mx-auto mb-4" />
             <h3 className="text-2xl font-bold text-stone-900 mb-2">Visit Us in Kathmandu</h3>
             <p className="text-stone-600">Located in Budhanilkantha, at the heart of Nepal’s trekking culture.</p>
           </div>

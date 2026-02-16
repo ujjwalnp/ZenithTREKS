@@ -35,7 +35,7 @@ export default async function TripDetailsPage({ params }) {
         <div className="absolute bottom-0 left-0 right-0 z-10">
           <div className="max-w-7xl mx-auto px-4 pb-8 sm:pb-12 md:pb-16 w-full text-white">
           <div className="flex items-center space-x-2 mb-4">
-            <span className="bg-emerald-600 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            <span className="bg-amber-600 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
               {trip.country}
             </span>
             <div className="flex items-center text-stone-300 text-sm">
@@ -46,10 +46,10 @@ export default async function TripDetailsPage({ params }) {
           <h1 className="text-4xl md:text-6xl font-black mb-4 tracking-tight">{trip.title}</h1>
           <div className="flex flex-wrap gap-6 text-stone-300 font-medium">
             <div className="flex items-center">
-              <Calendar className="h-5 w-5 mr-2 text-emerald-400" /> Fixed Departures
+              <Calendar className="h-5 w-5 mr-2 text-amber-400" /> Fixed Departures
             </div>
             <div className="flex items-center">
-              <Users className="h-5 w-5 mr-2 text-emerald-400" /> Small Groups
+              <Users className="h-5 w-5 mr-2 text-amber-400" /> Small Groups
             </div>
           </div>
         </div>
@@ -71,12 +71,12 @@ export default async function TripDetailsPage({ params }) {
           </section>
 
           <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-emerald-50 p-8 rounded-3xl border border-emerald-100">
-              <h3 className="font-bold text-emerald-900 mb-4 flex items-center">
-                <CheckCircle className="h-5 w-5 mr-2 text-emerald-600" />
+            <div className="bg-amber-50 p-8 rounded-3xl border border-amber-100">
+              <h3 className="font-bold text-amber-900 mb-4 flex items-center">
+                <CheckCircle className="h-5 w-5 mr-2 text-amber-600" />
                 What's Included
               </h3>
-              <ul className="space-y-3 text-emerald-800/80 text-sm font-medium">
+              <ul className="space-y-3 text-amber-800/80 text-sm font-medium">
                 <li>Professional certified local guides</li>
                 <li>All ground transportation during trip</li>
                 <li>Quality trekking equipment & permits</li>
@@ -103,7 +103,7 @@ export default async function TripDetailsPage({ params }) {
               <span className="text-stone-400 text-xs uppercase font-bold tracking-widest block mb-1">
                 Starting Price
               </span>
-              <div className="text-4xl font-black text-emerald-400">${Number(trip.price).toLocaleString()}</div>
+              <div className="text-4xl font-black text-amber-400">${Number(trip.price).toLocaleString()}</div>
               <p className="text-stone-400 text-xs mt-2 font-medium">Per person • Inclusive of all taxes</p>
             </div>
 
@@ -119,13 +119,13 @@ export default async function TripDetailsPage({ params }) {
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-stone-500 font-medium">Difficulty</span>
-                  <span className="text-emerald-700 font-bold">Moderate</span>
+                  <span className="text-amber-700 font-bold">Moderate</span>
                 </div>
               </div>
 
               <Link
                 href={`/trips/${trip.id}/book`}
-                className="w-full bg-emerald-700 text-white py-4 rounded-xl font-bold text-center block shadow-lg hover:bg-emerald-800 transition-all hover:scale-[1.02] active:scale-[0.98]"
+                className="w-full bg-amber-700 text-white py-4 rounded-xl font-bold text-center block shadow-lg hover:bg-amber-800 transition-all hover:scale-[1.02] active:scale-[0.98]"
               >
                 Book This Trip
               </Link>

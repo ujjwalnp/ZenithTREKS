@@ -67,7 +67,7 @@ export default function ProfilePage() {
   const getStatusColor = (status) => {
     switch (status) {
       case "confirmed":
-        return "bg-emerald-100 text-emerald-700"
+        return "bg-amber-100 text-amber-700"
       case "cancelled":
         return "bg-red-100 text-red-700"
       default:
@@ -84,7 +84,7 @@ export default function ProfilePage() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-stone-50">
-        <Loader2 className="h-10 w-10 animate-spin text-emerald-700" />
+        <Loader2 className="h-10 w-10 animate-spin text-amber-700" />
       </div>
     )
   }
@@ -119,12 +119,12 @@ export default function ProfilePage() {
         <div className="bg-white rounded-4xl shadow-2xl border border-stone-100 p-8">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-black text-stone-900 flex items-center space-x-2">
-              <Package className="h-6 w-6 text-emerald-700" />
+              <Package className="h-6 w-6 text-amber-700" />
               <span>My Bookings</span>
             </h2>
             <Link
               href="/trips"
-              className="text-emerald-700 hover:text-emerald-800 font-bold text-sm transition-colors"
+              className="text-amber-700 hover:text-amber-800 font-bold text-sm transition-colors"
             >
               Browse Trips →
             </Link>
@@ -132,7 +132,7 @@ export default function ProfilePage() {
 
           {bookingsLoading ? (
             <div className="flex items-center justify-center py-12">
-              <Loader2 className="h-8 w-8 animate-spin text-emerald-700" />
+              <Loader2 className="h-8 w-8 animate-spin text-amber-700" />
             </div>
           ) : bookings.length === 0 ? (
             <div className="text-center py-12">
@@ -141,7 +141,7 @@ export default function ProfilePage() {
               <p className="text-stone-500 mb-6">Start your Himalayan adventure by booking a trip!</p>
               <Link
                 href="/trips"
-                className="inline-block bg-emerald-700 text-white px-8 py-3 rounded-xl font-bold hover:bg-emerald-800 transition-all shadow-lg"
+                className="inline-block bg-amber-700 text-white px-8 py-3 rounded-xl font-bold hover:bg-amber-800 transition-all shadow-lg"
               >
                 Explore Trips
               </Link>
@@ -174,21 +174,21 @@ export default function ProfilePage() {
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                         <div className="flex items-center space-x-2 text-stone-600">
-                          <Users className="h-5 w-5 text-emerald-700" />
+                          <Users className="h-5 w-5 text-amber-700" />
                           <div>
                             <p className="text-xs font-bold uppercase text-stone-400">Participants</p>
                             <p className="font-bold">{booking.participants}</p>
                           </div>
                         </div>
                         <div className="flex items-center space-x-2 text-stone-600">
-                          <Calendar className="h-5 w-5 text-emerald-700" />
+                          <Calendar className="h-5 w-5 text-amber-700" />
                           <div>
                             <p className="text-xs font-bold uppercase text-stone-400">Booking Date</p>
                             <p className="font-bold">{formatDate(booking.booking_date)}</p>
                           </div>
                         </div>
                         <div className="flex items-center space-x-2 text-stone-600">
-                          <Calendar className="h-5 w-5 text-emerald-700" />
+                          <Calendar className="h-5 w-5 text-amber-700" />
                           <div>
                             <p className="text-xs font-bold uppercase text-stone-400">Booked On</p>
                             <p className="font-bold">{formatDate(booking.created_at)}</p>
@@ -197,7 +197,7 @@ export default function ProfilePage() {
                         <div className="flex items-center space-x-2 text-stone-600">
                           <div>
                             <p className="text-xs font-bold uppercase text-stone-400">Total Price</p>
-                            <p className="font-black text-emerald-700">Rs. {Number(booking.total_price).toLocaleString()}</p>
+                            <p className="font-black text-amber-700">Rs. {Number(booking.total_price).toLocaleString()}</p>
                           </div>
                         </div>
                       </div>

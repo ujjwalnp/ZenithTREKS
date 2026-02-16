@@ -25,7 +25,7 @@ export default function GalleryPage() {
       <Navbar />
       <div className="pt-28 pb-20 px-4 max-w-6xl mx-auto">
         <div className="mb-8 text-center">
-          <p className="text-emerald-700 font-bold uppercase text-xs tracking-[0.3em] mb-3">Gallery</p>
+          <p className="text-amber-700 font-bold uppercase text-xs tracking-[0.3em] mb-3">Gallery</p>
           <h1 className="text-4xl md:text-5xl font-black text-stone-900 mb-3">Moments in the Mountains</h1>
           <p className="text-stone-500 max-w-2xl mx-auto">
             Explore glimpses of breathtaking Himalayan journeys.
@@ -34,7 +34,7 @@ export default function GalleryPage() {
 
         {loading ? (
           <div className="flex items-center justify-center py-16">
-            <Loader2 className="h-10 w-10 animate-spin text-emerald-700" />
+            <Loader2 className="h-10 w-10 animate-spin text-amber-700" />
           </div>
         ) : images.length === 0 ? (
           <div className="text-center py-16 bg-white rounded-3xl border border-stone-100">
