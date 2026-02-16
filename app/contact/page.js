@@ -45,7 +45,7 @@ export default function ContactPage() {
         <div className="relative z-10 text-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">Contact Us</h1>
           <p className="text-xl text-stone-200 max-w-2xl mx-auto">
-            Have questions about your next adventure? Our Himalayan experts are here to help.
+            Planning your next Nepal adventure? Our Himalayan experts are ready to guide you.
           </p>
         </div>
       </section>
@@ -57,8 +57,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-3xl font-bold text-stone-900 mb-6">Get in Touch</h2>
               <p className="text-stone-600 mb-8 leading-relaxed">
-                Whether you're planning a trek to Everest Base Camp or want a custom tour of Bhutan, we're ready to make
-                your dream journey a reality.
+                Whether you’re trekking the Annapurna Range or exploring hidden Himalayan trails, we’re here to make your dream adventure happen.
               </p>
             </div>
 
@@ -69,7 +68,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-stone-900">Our Location</h3>
-                  <p className="text-stone-600">Thamel, Kathmandu, Nepal</p>
+                  <p className="text-stone-600">Budhanilkantha, Kathmandu, Nepal</p>
                   <p className="text-stone-600">Post Box: 44600</p>
                 </div>
               </div>
@@ -80,8 +79,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-stone-900">Call Us</h3>
-                  <p className="text-stone-600">+977-1-4XXXXXX</p>
-                  <p className="text-stone-600">+977-98XXXXXXXX (WhatsApp)</p>
+                  {/* <p className="text-stone-600">+977-1-4XXXXXX</p> */}
+                  <p className="text-stone-600">+977-9844159245 </p>
+                  {/* <p className="text-stone-600">+977-98XXXXXXXX (WhatsApp)</p> */}
                 </div>
               </div>
 
@@ -91,8 +91,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-stone-900">Email Us</h3>
-                  <p className="text-stone-600">info@ramhimalayan.com</p>
-                  <p className="text-stone-600">bookings@ramhimalayan.com</p>
+                  <p className="text-stone-600">trekszenith@gmail.com</p>
+                  {/* <p className="text-stone-600">info@ramhimalayan.com</p> */}
+                  {/* <p className="text-stone-600">bookings@ramhimalayan.com</p> */}
                 </div>
               </div>
 
@@ -102,7 +103,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-stone-900">Working Hours</h3>
-                  <p className="text-stone-600">Sun - Fri: 9:00 AM - 6:00 PM</p>
+                  <p className="text-stone-600">Sun - Fri: 10:00 AM - 5:00 PM</p>
                   <p className="text-stone-600">Sat: Closed (Available for emergencies)</p>
                 </div>
               </div>
@@ -201,8 +202,8 @@ export default function ContactPage() {
         <div className="w-full h-full flex items-center justify-center bg-stone-100 border-t border-stone-200">
           <div className="text-center p-8">
             <MapPin className="h-12 w-12 text-emerald-700 mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-stone-900 mb-2">Find Us in Kathmandu</h3>
-            <p className="text-stone-600">Thamel, the heart of Nepal's trekking hub.</p>
+            <h3 className="text-2xl font-bold text-stone-900 mb-2">Visit Us in Kathmandu</h3>
+            <p className="text-stone-600">Located in Budhanilkantha, at the heart of Nepal’s trekking culture.</p>
           </div>
         </div>
       </section>

@@ -38,7 +38,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-stone-400 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
-              Explore the majestic Himalayas with expert guides and unforgettable experiences. Your adventure begins here.
+                Discover the Himalayas with seasoned guides and experiences you’ll never forget. Your journey starts today.
             </p>
             <div className="flex gap-3">
               <a
@@ -111,7 +111,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
                 <span className="text-stone-400 text-sm sm:text-base">
-                  Thamel, Kathmandu<br />
+                  Budhanilkantha, Kathmandu<br />
                   Nepal
                 </span>
               </li>
@@ -134,7 +134,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-6 sm:pt-8 border-t border-stone-800 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
           <p className="text-stone-500 text-xs sm:text-sm text-center md:text-left">
-            © {currentYear} Zenith TREKS & Expedition. All rights reserved.
+            © {currentYear} Zenith Treks & Expedition. All rights reserved.
           </p>
           <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm">
