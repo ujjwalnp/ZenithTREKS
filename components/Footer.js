@@ -124,7 +124,7 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-600 flex-shrink-0" />
                 <a href="mailto:trekszenith@gmail.com" className="text-stone-400 hover:text-emerald-500 transition-colors text-sm sm:text-base break-all">
-                  trekszenith@gmail.com
+                  info@zenithtrekexped.com
                 </a>
               </li>
             </ul>

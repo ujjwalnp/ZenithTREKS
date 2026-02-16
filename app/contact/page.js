@@ -91,9 +91,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-stone-900">Email Us</h3>
-                  <p className="text-stone-600">trekszenith@gmail.com</p>
-                  {/* <p className="text-stone-600">info@ramhimalayan.com</p> */}
-                  {/* <p className="text-stone-600">bookings@ramhimalayan.com</p> */}
+                  <p className="text-stone-600">info@zenithtrekexped.com</p>
+                  <p className="text-stone-600">bookings@zenithtrekexped.com</p>
                 </div>
               </div>
 
