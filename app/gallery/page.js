@@ -26,9 +26,9 @@ export default function GalleryPage() {
       <div className="pt-28 pb-20 px-4 max-w-6xl mx-auto">
         <div className="mb-8 text-center">
           <p className="text-emerald-700 font-bold uppercase text-xs tracking-[0.3em] mb-3">Gallery</p>
-          <h1 className="text-4xl md:text-5xl font-black text-stone-900 mb-3">Himalayan Moments</h1>
+          <h1 className="text-4xl md:text-5xl font-black text-stone-900 mb-3">Moments in the Mountains</h1>
           <p className="text-stone-500 max-w-2xl mx-auto">
-            A curated collection of breathtaking scenes from our expeditions.
+            Explore glimpses of breathtaking Himalayan journeys.
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export default function GalleryPage() {
           <div className="text-center py-16 bg-white rounded-3xl border border-stone-100">
             <ImageIcon className="h-16 w-16 text-stone-300 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-stone-700 mb-2">No images yet</h3>
-            <p className="text-stone-500">Check back soon for new adventures.</p>
+            <p className="text-stone-500">Stay tuned for our latest adventures.</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
