@@ -243,12 +243,13 @@ export default async function Home() {
                 className="bg-stone-50 p-8 rounded-3xl border border-stone-200 hover:shadow-lg transition-all duration-300 opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
+                
+                <p className="text-stone-700 mb-6 leading-relaxed italic">"{testimonial.text}"</p>
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 text-yellow-500 fill-current" />
                   ))}
                 </div>
-                <p className="text-stone-700 mb-6 leading-relaxed italic">"{testimonial.text}"</p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-amber-700 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
                     {testimonial.name.charAt(0)}
