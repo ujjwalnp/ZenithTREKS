@@ -19,7 +19,7 @@ export async function POST(req) {
   }
 
   try {
-    const { title, country, description, price, duration, thumbnail, slug } = await req.json()
+    const { title, country, description, price, duration, maxAltitude, difficulty, thumbnail, slug } = await req.json()
 
     // Basic slug generation/fallback in case API is called directly without slug
     const baseSlug =
@@ -33,8 +33,8 @@ export async function POST(req) {
             .replace(/^-+|-+$/g, "")
 
     const result = await query({
-      query: "INSERT INTO trips (title, slug, country, description, price, duration, thumbnail) VALUES (?, ?, ?, ?, ?, ?, ?)",
-      values: [title, baseSlug, country, description, price, duration, thumbnail],
+      query: "INSERT INTO trips (title, slug, country, description, price, duration, maxAltitude, difficulty, thumbnail) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+      values: [title, baseSlug, country, description, price, duration, maxAltitude, difficulty, thumbnail],
     })
 
     return NextResponse.json({ id: result.insertId, message: "Trip created successfully" }, { status: 201 })

@@ -18,6 +18,8 @@ CREATE TABLE IF NOT EXISTS trips (
   description TEXT NOT NULL,
   price DECIMAL(10, 2) NOT NULL,
   duration INT NOT NULL,
+  maxAltitude INT NOT NULL,
+  difficulty ENUM('easy', 'moderate', 'hard') NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );

@@ -29,7 +29,7 @@ export async function PUT(req, { params }) {
   const { id } = await params
 
   try {
-    const { title, country, description, price, duration, thumbnail, slug } = await req.json()
+    const { title, country, description, price, duration, maxAltitude, difficulty, thumbnail, slug } = await req.json()
 
     const baseSlug =
       slug && slug.trim().length > 0
@@ -43,8 +43,8 @@ export async function PUT(req, { params }) {
 
     await query({
       query:
-        "UPDATE trips SET title = ?, slug = ?, country = ?, description = ?, price = ?, duration = ?, thumbnail = ? WHERE id = ?",
-      values: [title, baseSlug, country, description, price, duration, thumbnail, id],
+        "UPDATE trips SET title = ?, slug = ?, country = ?, description = ?, price = ?, duration = ?, maxAltitude = ?, difficulty = ?, thumbnail = ? WHERE id = ?",
+      values: [title, baseSlug, country, description, price, duration, maxAltitude, difficulty, thumbnail, id],
     })
 
     return NextResponse.json({ message: "Trip updated successfully" })

@@ -26,6 +26,8 @@ export default function AdminDashboard() {
     country: "trips",
     price: "",
     duration: "",
+    maxAltitude: "",
+    difficulty: "moderate",
     thumbnail: "",
     description: "",
   })
@@ -155,7 +157,7 @@ export default function AdminDashboard() {
       if (res.ok) {
         setIsModalOpen(false)
         setEditingTrip(null)
-        setFormData({ title: "", slug: "", country: "trips", price: "", thumbnail: "", description: "", duration: "" })
+        setFormData({ title: "", slug: "", country: "trips", price: "", thumbnail: "", description: "", duration: "", maxAltitude: "", difficulty: "moderate" })
         fetchTrips()
       }
     } catch (err) {
@@ -258,7 +260,7 @@ export default function AdminDashboard() {
               <button
                 onClick={() => {
                   setEditingTrip(null)
-                  setFormData({ title: "", slug: "", country: "trips", price: "", thumbnail: "", description: "", duration: "" })
+                  setFormData({ title: "", slug: "", country: "trips", price: "", thumbnail: "", description: "", duration: "", maxAltitude: "", difficulty: "moderate" })
                   setIsModalOpen(true)
                 }}
                 className="bg-amber-700 text-white px-6 py-3 rounded-xl font-bold flex items-center shadow-lg hover:bg-amber-800 transition-all"
@@ -300,6 +302,8 @@ export default function AdminDashboard() {
                             country: trip.country,
                             price: trip.price,
                             duration: trip.duration,
+                            maxAltitude: trip.maxAltitude,
+                            difficulty: trip.difficulty,
                             thumbnail: trip.thumbnail,
                             description: trip.description,
                           })
@@ -565,7 +569,7 @@ export default function AdminDashboard() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-bold text-stone-700 mb-2">Duration</label>
+                  <label className="block text-sm font-bold text-stone-700 mb-2">Duration (days)</label>
                   <input
                     type="number"
                     className="w-full px-4 py-3 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-amber-500"
@@ -575,6 +579,37 @@ export default function AdminDashboard() {
                       setFormData({
                         ...formData,
                         duration: e.target.value,
+                      })
+                    }
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-sm font-bold text-stone-700 mb-2">Difficulty</label>
+                  <select
+                    required
+                    className="w-full px-4 py-3 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-amber-500"
+                    value={formData.difficulty}
+                    onChange={(e) => setFormData({ ...formData, difficulty: e.target.value })}
+                  >
+                    <option value="easy">Easy</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="hard">Hard</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-bold text-stone-700 mb-2">Maximum Altitude (meters)</label>
+                  <input
+                    type="number"
+                    className="w-full px-4 py-3 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-amber-500"
+                    placeholder="Maximum altitude in meters"
+                    value={formData.maxAltitude}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        maxAltitude: e.target.value,
                       })
                     }
                   />

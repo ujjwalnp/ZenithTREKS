@@ -111,15 +111,15 @@ export default async function TripDetailsPage({ params }) {
               <div className="space-y-4">
                 <div className="flex justify-between text-sm">
                   <span className="text-stone-500 font-medium">Duration</span>
-                  <span className="text-stone-900 font-bold">12 Days</span>
+                  <span className="text-stone-900 font-bold">{trip.duration} Days</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-stone-500 font-medium">Max Altitude</span>
-                  <span className="text-stone-900 font-bold">5,364m</span>
+                  <span className="text-stone-900 font-bold">{trip.maxAltitude}m</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-stone-500 font-medium">Difficulty</span>
-                  <span className="text-amber-700 font-bold">Moderate</span>
+                  <span className="text-amber-700 font-bold">{trip.difficulty ? trip.difficulty.charAt(0).toUpperCase() + trip.difficulty.slice(1) : ""}</span>
                 </div>
               </div>
 
