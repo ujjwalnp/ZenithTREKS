@@ -103,6 +103,65 @@ export default function ReviewsSection() {
     <section className="py-24 px-4 bg-stone-50">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+
+          {/* Recent Reviews */}
+          <div>
+            <h2 className="text-sm font-bold text-amber-700 uppercase tracking-widest mb-3">
+              Traveler Reviews
+            </h2>
+            <h3 className="text-3xl font-bold text-stone-900 mb-6">What Guests Are Saying</h3>
+
+            {reviews.length === 0 && !loading && (
+              <p className="text-stone-500 text-sm">
+                No reviews yet. Be the first to share your experience!
+              </p>
+            )}
+
+            <div className="space-y-4">
+              {reviews.map((review) => (
+                <article
+                  key={review.id}
+                  className="bg-white rounded-2xl border border-stone-200 p-5 shadow-sm"
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <h4 className="font-semibold text-stone-900">{review.name}</h4>
+                    <span className="text-xs text-stone-400">
+                      {review.created_at
+                        ? new Date(review.created_at).toLocaleDateString()
+                        : ""}
+                    </span>
+                  </div>
+                  <div className="flex items-center mb-2">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <Star
+                        key={star}
+                        className={`h-4 w-4 ${
+                          star <= review.rating
+                            ? "text-yellow-400 fill-yellow-400"
+                            : "text-stone-300"
+                        }`}
+                      />
+                    ))}
+                  </div>
+                  <p className="text-sm text-stone-700 leading-relaxed">{review.description}</p>
+                </article>
+              ))}
+            </div>
+
+            {hasMore && (
+              <div className="mt-6">
+                <button
+                  type="button"
+                  onClick={() => fetchReviews(page + 1, true)}
+                  disabled={loading}
+                  className="text-sm font-semibold text-amber-700 hover:text-amber-800 disabled:opacity-60"
+                >
+                  {loading ? "Loading..." : "Show more reviews"}
+                </button>
+              </div>
+            )}
+          </div>
+
           {/* Write a Review */}
           <div className="bg-white rounded-3xl shadow-sm border border-stone-200 p-8">
             <h2 className="text-sm font-bold text-amber-700 uppercase tracking-widest mb-3">
@@ -162,63 +221,6 @@ export default function ReviewsSection() {
             </form>
           </div>
 
-          {/* Recent Reviews */}
-          <div>
-            <h2 className="text-sm font-bold text-amber-700 uppercase tracking-widest mb-3">
-              Traveler Reviews
-            </h2>
-            <h3 className="text-3xl font-bold text-stone-900 mb-6">What Guests Are Saying</h3>
-
-            {reviews.length === 0 && !loading && (
-              <p className="text-stone-500 text-sm">
-                No reviews yet. Be the first to share your experience!
-              </p>
-            )}
-
-            <div className="space-y-4">
-              {reviews.map((review) => (
-                <article
-                  key={review.id}
-                  className="bg-white rounded-2xl border border-stone-200 p-5 shadow-sm"
-                >
-                  <div className="flex items-center justify-between mb-2">
-                    <h4 className="font-semibold text-stone-900">{review.name}</h4>
-                    <span className="text-xs text-stone-400">
-                      {review.created_at
-                        ? new Date(review.created_at).toLocaleDateString()
-                        : ""}
-                    </span>
-                  </div>
-                  <div className="flex items-center mb-2">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <Star
-                        key={star}
-                        className={`h-4 w-4 ${
-                          star <= review.rating
-                            ? "text-yellow-400 fill-yellow-400"
-                            : "text-stone-300"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                  <p className="text-sm text-stone-700 leading-relaxed">{review.description}</p>
-                </article>
-              ))}
-            </div>
-
-            {hasMore && (
-              <div className="mt-6">
-                <button
-                  type="button"
-                  onClick={() => fetchReviews(page + 1, true)}
-                  disabled={loading}
-                  className="text-sm font-semibold text-amber-700 hover:text-amber-800 disabled:opacity-60"
-                >
-                  {loading ? "Loading..." : "Show more reviews"}
-                </button>
-              </div>
-            )}
-          </div>
         </div>
       </div>
     </section>
