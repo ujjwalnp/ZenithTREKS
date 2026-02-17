@@ -18,7 +18,7 @@ export default function AboutPage() {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=2000&q=80"
+            src="/himalayan-mountain-range-panorama.jpg"
             alt="Himalayan Panorama"
             fill
             className="object-cover"
