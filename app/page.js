@@ -122,7 +122,7 @@ export default async function Home() {
 
                   {/* Duration - LEFT */}
                   <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-bold text-stone-900 uppercase tracking-wider">
-                    {trip.duration || "12 Days"}
+                    {trip.duration || "12 "} Days
                   </div>
 
                   {/* Country - RIGHT */}

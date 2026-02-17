@@ -24,6 +24,7 @@ export default function AdminDashboard() {
     slug: "",
     country: "trips",
     price: "",
+    duration: "",
     thumbnail: "",
     description: "",
   })
@@ -153,7 +154,7 @@ export default function AdminDashboard() {
       if (res.ok) {
         setIsModalOpen(false)
         setEditingTrip(null)
-        setFormData({ title: "", slug: "", country: "trips", price: "", thumbnail: "", description: "" })
+        setFormData({ title: "", slug: "", country: "trips", price: "", thumbnail: "", description: "", duration: "" })
         fetchTrips()
       }
     } catch (err) {
@@ -256,7 +257,7 @@ export default function AdminDashboard() {
               <button
                 onClick={() => {
                   setEditingTrip(null)
-                  setFormData({ title: "", slug: "", country: "trips", price: "", thumbnail: "", description: "" })
+                  setFormData({ title: "", slug: "", country: "trips", price: "", thumbnail: "", description: "", duration: "" })
                   setIsModalOpen(true)
                 }}
                 className="bg-amber-700 text-white px-6 py-3 rounded-xl font-bold flex items-center shadow-lg hover:bg-amber-800 transition-all"
@@ -287,6 +288,7 @@ export default function AdminDashboard() {
                   <div className="p-6 grow">
                     <h3 className="text-xl font-bold text-stone-900 mb-1">{trip.title}</h3>
                     <p className="text-amber-700 font-bold mb-4">$ {Number(trip.price).toLocaleString()}</p>
+                    <p className="text-stone-500 text-sm mb-4">{trip.duration} Days</p>
                     <div className="flex items-center space-x-3 pt-4 border-t border-stone-100">
                       <button
                         onClick={() => {
@@ -296,6 +298,7 @@ export default function AdminDashboard() {
                             slug: trip.slug || "",
                             country: trip.country,
                             price: trip.price,
+                            duration: trip.duration,
                             thumbnail: trip.thumbnail,
                             description: trip.description,
                           })
@@ -554,6 +557,21 @@ export default function AdminDashboard() {
                     <option value="trips">Trip</option>
                     <option value="treks">Trek</option>
                   </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-bold text-stone-700 mb-2">Duration</label>
+                  <input
+                    type="number"
+                    className="w-full px-4 py-3 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-amber-500"
+                    placeholder="Duration in days"
+                    value={formData.duration}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        duration: e.target.value,
+                      })
+                    }
+                  />
                 </div>
               </div>
 
