@@ -19,6 +19,7 @@ export default function AdminDashboard() {
   const [galleryUploading, setGalleryUploading] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [editingTrip, setEditingTrip] = useState(null)
+  const [isSlugManuallyEdited, setIsSlugManuallyEdited] = useState(false)
   const [formData, setFormData] = useState({
     title: "",
     slug: "",
@@ -511,19 +512,18 @@ export default function AdminDashboard() {
                     value={formData.title}
                     onChange={(e) => {
                       const newTitle = e.target.value
+
                       setFormData((prev) => ({
                         ...prev,
                         title: newTitle,
-                        // Auto-generate slug only if user hasn't manually typed one
-                        slug:
-                          prev.slug && prev.slug.length > 0
-                            ? prev.slug
-                            : newTitle
-                                .toString()
-                                .toLowerCase()
-                                .trim()
-                                .replace(/[^a-z0-9]+/g, "-")
-                                .replace(/^-+|-+$/g, ""),
+                        slug: isSlugManuallyEdited
+                          ? prev.slug
+                          : newTitle
+                              .toLowerCase()
+                              .trim()
+                              .replace(/[^a-z0-9\s-]/g, "")
+                              .replace(/\s+/g, "-")
+                              .replace(/-+/g, "-")
                       }))
                     }}
                   />
@@ -535,12 +535,18 @@ export default function AdminDashboard() {
                     className="w-full px-4 py-3 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-amber-500"
                     placeholder="auto-generated from title if left blank"
                     value={formData.slug}
-                    onChange={(e) =>
+                    onChange={(e) => {
+                      setIsSlugManuallyEdited(true)
                       setFormData({
                         ...formData,
-                        slug: e.target.value,
+                        slug: e.target.value
+                          .toLowerCase()
+                          .trim()
+                          .replace(/[^a-z0-9\s-]/g, "")
+                          .replace(/\s+/g, "-")
+                          .replace(/-+/g, "-")
                       })
-                    }
+                    }}
                   />
                 </div>
               </div>
